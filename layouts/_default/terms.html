@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+    <h1>{{ i18n .Title }}</h1>
+
+    <ul class="terms">
+        {{ range $key, $value := .Data.Terms }}
+        <li>
+            <a href="{{ (print $.Data.Plural "/" (lower $key)) | absURL }}">
+            {{ $key }}
+            </a>
+            ({{ len $value }})
+        </li>
+        {{ end }}
+    </ul>
+
+{{ end }}

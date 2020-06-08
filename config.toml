@@ -1,0 +1,36 @@
+baseURL = "https://josephbuiteweg.com/"
+languageCode = "en-us"
+title = "Joseph Buiteweg"
+[params]
+  author = "Joey Buiteweg"
+  description = "Joey's Personal Website/Blog"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "music"
+    name = "Music"
+    url = "/music/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "dei"
+    name = "DEI"
+    url = "/dei/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"

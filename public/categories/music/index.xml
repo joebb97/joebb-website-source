@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on Joseph Buiteweg</title>
+    <link>http://localhost:1313/categories/music/</link>
+    <description>Joseph Buiteweg (music)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+    <atom:link href="http://localhost:1313/categories/music/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/music/things/</link>
+      <pubDate>Thu, 23 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/music/things/</guid>
+      <description>&lt;p&gt;I am music. Nuff said&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
