@@ -1,5 +1,13 @@
 {{ define "main" }}
-    <h1>{{ .Site.Params.author }}</h1>
     <h2>{{ .Site.Params.info }}</h2>
-    {{ .Content }}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 px-0">
+                <img class="img-fluid thumbnail" src="{{ "me.jpg" | absURL }}"></img>
+            </div>
+            <div class="col">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
 {{ end }}

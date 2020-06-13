@@ -1,2 +1,4 @@
-<p>© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}<br>
+<div class="container">
+© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
 {{ i18n "powered" | humanize }} <a target="_blank" href="https://gohugo.io/">Hugo</a>
+<div class="container">
