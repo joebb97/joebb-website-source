@@ -19,3 +19,5 @@ Which is why I chose [Hugo](https://gohugo.io/) and [Bootstrap](https://getboots
 I probably could've saved myself a few weekends and evenings of time using Wordpress, SquareSpace, Wix, or Drupal, but that's like, TOO MAINSTREAM MAN.
 
 I followed the [Anubis](https://github.com/mitrichius/hugo-theme-anubis) and [Hugo-Coder](https://github.com/luizdepra/hugo-coder/) as a guideline in making my own
+
+This project is in no-way intended to be usable by anyone but me (it is not meant to be a plug-and-play theme), but feel free to reference its implementation if you like.

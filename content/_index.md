@@ -16,4 +16,4 @@ If you're interested in learning even more about me, my values, and my goals, he
 
 Otherwise feel free to look around!
 
-This site was made using Hugo, Bootstrap, and my own CSS styling. The source code exists [here](https://github.com/joebb97/joebb97.github.io)
+This site was made using Hugo, Bootstrap, and some of my own CSS styling. The source code exists [here](https://github.com/joebb97/joebb97.github.io)
