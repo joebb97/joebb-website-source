@@ -1,0 +1,44 @@
+/* Some basic styling, Bootstrap for everything else */
+ 
+body {
+    color: #444;
+    /* background-color: #EEEEEE; */
+    /* background-color: MistyRose; */
+    background-color: LavenderBlush;
+    line-height: 1.6;
+    font-size: 18px;
+    /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
+    /* max-width: 900px; */
+    margin: auto;
+}
+
+.navbar {
+    /* background-color: DarkSalmon; */
+    /* background-color: LightCoral; */
+    /* background-color: #ffb29b; */
+    background-color: #ff9bb2;
+    font-family: "Roboto"; 
+}
+
+.navbar-brand {
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: black;
+    font-size: 17px;
+}
+
+a {
+    color: #88003e;
+}
+
+a:hover {
+    color: #004188
+}
+
+.homepage-content > h1 {
+    text-align: center;
+    margin-bottom: 3px;
+}

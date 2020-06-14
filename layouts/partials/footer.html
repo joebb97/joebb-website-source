@@ -1,4 +1,15 @@
-<div class="container">
-© {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
-{{ i18n "powered" | humanize }} <a target="_blank" href="https://gohugo.io/">Hugo</a>
-<div class="container">
+<hr></hr>
+<div class="container mb-4">
+    <div class="row">
+        <div class="col pl-0">
+            © {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
+            <br>
+            <span>
+            {{ i18n "powered" | humanize }} <a target="_blank" href="https://gohugo.io/">Hugo</a>
+            </span>
+        </div>
+        <div class="col text-right pr-0">
+            <a href="{{ "/contact/" | absURL }}">Contact+Resume</a>
+        </div>
+    </div>
+</div>

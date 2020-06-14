@@ -13,22 +13,34 @@ title = "Joseph Buiteweg"
     weight = 1
 
   [[menu.main]]
-    identifier = "music"
-    name = "Music"
-    url = "/music/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
     weight = 2
 
   [[menu.main]]
-    identifier = "dei"
-    name = "DEI"
-    url = "/dei/"
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
     weight = 3
 
   [[menu.main]]
-    identifier = "Blog"
-    name = "Blog"
-    url = "/blog/"
+    identifier = "music"
+    name = "Music"
+    url = "/music/"
     weight = 4
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+
+  # [[menu.main]]
+  #   identifier = "dei"
+  #   name = "DEI"
+  #   url = "/dei/"
+  #   weight = 4
 
 [taxonomies]
 category = "categories"
