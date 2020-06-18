@@ -1,5 +1,5 @@
 /* Some basic styling, Bootstrap for everything else */
- 
+
 body {
     color: #444;
     /* background-color: #EEEEEE; */
@@ -8,8 +8,20 @@ body {
     line-height: 1.6;
     font-size: 18px;
     /* font-family: "Comic Sans MS", "Comic Sans", cursive; */
-    /* max-width: 900px; */
+    max-width: 1000px;
     margin: auto;
+}
+
+h1.post-title {
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.content > h1 {
+    /* font-size: 2rem; */
+    margin-bottom: 1rem;
+    font-weight: normal;
+    /* color: red; */
 }
 
 .navbar {
@@ -20,6 +32,13 @@ body {
     font-family: "Roboto"; 
 }
 
+/* Use bootstrap's medium devices breakpoint */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column!important;
+    }
+}
+
 .navbar-brand {
     color: black;
     font-weight: bolder;
@@ -27,6 +46,7 @@ body {
 
 .nav-link {
     color: black;
+    font-weight: bold;
     font-size: 17px;
 }
 
