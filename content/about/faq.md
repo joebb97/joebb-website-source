@@ -16,11 +16,10 @@ I've gotten tons of help and useful info from other peoples' programming blogs a
 
 I was not born knowing what I know - other people have helped me get to where I am. It's important us engineers acknowledge our struggles, as it helps comfort those who face the same difficulty in learning the skills needed in our respective fields. I'm hoping that documenting my struggles with new things I learn will help on this front.
 
-Most people in tech have been saved by reading somebody else's encounter with the esoteric and pain-staking problem they're tackling. StackOverflow, various StackExchange sites, people's blogs, spec-sheets, and user documentation are all crucial to the landscape of learning software.
+Most people in tech have been saved by reading somebody else's encounter with the esoteric and pain-staking problem they're tackling. StackOverflow, various StackExchange sites, people's blogs, spec-sheets, and user documentation are all crucial to the landscape of learning software. My dream is for someone to randomly stumble across one of my posts via search engine, get some use out of it, and then go about their day one step closer to solving their problem.
 
-{{< figure src="https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" 
-            class="center"
-            caption="CC BY-NC 2.5" >}}
+![xkcd](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png
+"CC BY-NC 2.5")
 
 I think this [talk](https://www.youtube.com/watch?v=Xe1TZaElTAs) by Clay Shirky sums it up nicely.
 
@@ -32,4 +31,4 @@ Yes everything on this site is my own personal opinion and doesn't necessarily r
 
 Much of programming and tech is quite subjective with only some absolutes. The above disclaimer is quite important.
 
-If you disagree with the content you see here don't hesitate to reach out. I love discussing most all topics related to tech, even the most subjective ones.
+If you disagree with the content you see here, don't hesitate to reach out. I love discussing most all topics related to tech, even the most subjective ones.
