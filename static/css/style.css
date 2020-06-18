@@ -41,6 +41,10 @@ h1.post-title {
     .navbar {
         flex-direction: column!important;
     }
+
+    .navbar-brand {
+        margin-right: 0px;
+    }
 }
 
 .navbar-brand {

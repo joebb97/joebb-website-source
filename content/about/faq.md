@@ -6,7 +6,7 @@ author: "Joey"
 
 ## Why is your website pink?
 
-My blog is pink because, I really like pink and pastel colors. I appreciate their friendly and comforting qualities, both of which I try to bring to my interactions with others.
+My blog is pink because I really like pink and pastel colors. I appreciate their friendly and comforting qualities, both of which I try to bring to my interactions with others.
 
 I've also found the stigmas regarding cis-gendered straight men and the color pink silly and unfair, so I say we **yeet em'** to the curb.
 
