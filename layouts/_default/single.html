@@ -3,12 +3,12 @@
     <article class="post">
         <header class="mt-4 text-center" >
             <h1 class="post-title">{{ .Title }}</h1>
+            {{ partial "articleInfoFull.html" . }}
             <hr>
         </header>
         <div class="content">
             {{ .Content }}
         </div>
-        {{ partial "articleInfoFull.html" . }}
     </article>
     {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}

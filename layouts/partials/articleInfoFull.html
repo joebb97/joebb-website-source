@@ -2,6 +2,9 @@
     {{ if .Params.date }}
         <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
     {{ end }}
+    {{ if .Params.author }}
+    by: {{ .Params.author }}
+    {{ end }}
     <div class="article-taxonomies">
         {{ if .Params.categories }}
             <ul class="article-categories">

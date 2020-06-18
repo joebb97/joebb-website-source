@@ -17,11 +17,15 @@ h1.post-title {
     font-family: "Roboto";
 }
 
-.content > h1 {
-    /* font-size: 2rem; */
-    margin-bottom: 1rem;
+.content > h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
     font-weight: normal;
     /* color: red; */
+}
+
+.content > figure {
+    text-align: center
 }
 
 .navbar {
