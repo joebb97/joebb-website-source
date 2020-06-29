@@ -6,9 +6,17 @@ author: "Joey"
 
 ## Why is your website pink?
 
-My blog is pink because I really like pink and pastel colors. I appreciate their friendly and comforting qualities, both of which I try to bring to my interactions with others.
+My website is pink because I enjoy pink and pastel colors. I appreciate their friendly and comforting qualities, both of which I try my best to bring to my interactions with others.
 
-I've also found the stigmas regarding cis-gendered straight men and the color pink silly and unfair, so I say we **yeet em'** to the curb.
+## Thoughts on workplace discrimination of all shapes and sizes?
+
+Let's avoid that in any way possible.
+
+Technology should try to be everything-neutral and provide net good to real people.
+
+## How about those same forms of discrimination in higher-education?
+
+Let's also avoid that in any way possible.
 
 ## Why do you have a website / blog?
 
@@ -21,13 +29,9 @@ Most people in tech have been saved by reading somebody else's encounter with th
 ![xkcd](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png
 "CC BY-NC 2.5")
 
-I think this [talk](https://www.youtube.com/watch?v=Xe1TZaElTAs) by Clay Shirky sums it up nicely.
-
-(Note I'm not a huge fan of Clay referring to everyone as "guys". I believe "people" or "engineers" is often a better choice. The word hacker also makes me cringe, but the sentiment is said well otherwise. The talk shows that it's from 2007 with its references, as `perl` is relatively old. Do note this is just my opinion, but I believe most people will tell you Python and Ruby are much more sensible choices in the year [2020](https://www.quora.com/Is-Perl-still-relevant-in-2020?share=1). )
-
 ## These are all just your opinions, right?
 
-Yes everything on this site is my own personal opinion and doesn't necessarily reflect that of whoever employs me at any given time.
+Yes everything on this site is my own personal opinion and doesn't necessarily reflect that of whoever employs me at any given time. Some might even call what I write here **jokes** and **satire**, but sadly words will only get us so far.
 
 Much of programming and tech is quite subjective with only some absolutes. The above disclaimer is quite important.
 
