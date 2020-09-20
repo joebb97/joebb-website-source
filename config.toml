@@ -1,8 +1,8 @@
 baseURL = "https://www.josephbuiteweg.com/"
 languageCode = "en-us"
-title = "Joseph Buiteweg"
+title = "Joey Buiteweg"
 [params]
-  author = "Joseph Buiteweg"
+  author = "Joey Buiteweg"
   description = "Joey's Personal Website/Blog"
 
 [menu]

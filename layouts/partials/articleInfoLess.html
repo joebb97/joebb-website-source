@@ -1,13 +1,6 @@
 <div class="article-info">
-    {{ if .Params.author }}
-    by {{ .Params.author }}
     {{ if .Params.date }}
-        <div class="article-date">
-            Last updated
-            {{ .Params.date.Format "2006-01-02" }}
-        </div>
-    {{ end }}
-    
+        <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
     {{ end }}
     <div class="article-taxonomies">
         {{ if .Params.categories }}

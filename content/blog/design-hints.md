@@ -1,11 +1,12 @@
 ---
 title: "Butler Lampson's System Design Hints"
 date: 2020-06-07
-draft: true
+draft: false
 categories: [system-design]
 author: Joey Buiteweg
 ---
-System design hints
+
+A summary of [Butler Lampson](https://en.wikipedia.org/wiki/Butler_Lampson)'s original [paper](https://bwlampson.site/33-Hints/Acrobat.pdf)
 
 2 Functionality:
 

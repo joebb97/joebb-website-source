@@ -1,9 +1,18 @@
 ---
-title: About Me
-date: 2017-03-23
+title: My Gear
+date: 9/20/2020
 draft: true
-tags: ["abeltaere"]
 categories: ["music"]
 ---
 
-I am music. Nuff said
+# Audio Interface
+Scarlett 2i4
+
+# Monitors
+Rokit KRK 4 
+
+# DAW
+Ableton
+
+# Microphone
+Shure SM58

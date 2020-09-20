@@ -12,7 +12,7 @@ My main interests lie in any of the intersections of Computer Security, Embedded
 In my spare time I enjoy producing music, playing the Saxophone and Piano, and staying healthy through strength training and playing Ultimate Frisbee.
 I also enjoy watching sports and playing video games, especially Super Smash Bros.
 
-If you're interested in learning even more about me, my values, and my goals, head [here]({{< ref "/about/_index.md" >}})
+If you'd like to see some projects I've worked on, head [here]({{< ref "/projects">}})
 
 Otherwise feel free to look around!
 
