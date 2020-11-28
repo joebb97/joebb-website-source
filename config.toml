@@ -46,3 +46,9 @@ title = "Joey Buiteweg"
 category = "categories"
 tag = "tags"
 series = "series"
+
+[privacy]
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.youtube]
+    privacyEnhanced = true
