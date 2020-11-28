@@ -81,7 +81,12 @@ A summary of [Butler Lampson](https://en.wikipedia.org/wiki/Butler_Lampson)'s or
 * Safety first, avoid disaster when allocating resources, don’t try to always try to be optimal.
     * Overloading a system can drastically degrade its service. Leave head room for things if you can, don’t cause thrashing.
     * Cleverness only really works if you know the load. CPU scheduling example, be lazy and safe some times
-- Shed load to control demand, rather than allowing the system to become overloaded. Like how MAC’s intentionally run a process that does empty CPU operations to cool it down. Drop packets as a router if it’s flooded, memory manager limits jobs. Worst case the system crashes and can start over with less load. Arpanet tried to always deliver a packet, but this lead to deadlocks a lot if a link goes down.
+
+* Shed load to control demand, rather than allowing the system to become overloaded. 
+    * Like how mac’s intentionally run a process that does empty CPU operations to cool it down.
+    * Drop packets as a router if it’s flooded, memory manager limits jobs.
+    * Worst case the system crashes and can start over with less load.
+    * Arpanet tried to always deliver a packet, but this lead to deadlocks a lot if a link goes down.
 
 # 4 Fault-tolerance
 

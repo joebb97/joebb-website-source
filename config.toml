@@ -52,3 +52,7 @@ series = "series"
     disable = true
   [privacy.youtube]
     privacyEnhanced = true
+
+[markup]
+    [markup.highlight]
+    style = "dracula"
