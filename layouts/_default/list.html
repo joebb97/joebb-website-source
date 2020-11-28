@@ -14,8 +14,8 @@
         {{ range .Pages }}
         <li>
             <a href="{{.Permalink}}">{{.Title}}</a>
+            {{ partial "articleInfoLess.html" . }}
         </li>
-        {{ partial "articleInfoLess.html" . }}
         {{ end }}
     </ul>
 </main>
