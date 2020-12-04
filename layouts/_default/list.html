@@ -12,7 +12,7 @@
     </article>
     <ul>
         {{ range .Pages }}
-        <li>
+        <li class="mb-2">
             <a href="{{.Permalink}}">{{.Title}}</a>
             {{ partial "articleInfoLess.html" . }}
         </li>

@@ -78,7 +78,7 @@ A summary of [Butler Lampson](https://en.wikipedia.org/wiki/Butler_Lampson)'s or
 
 * Use batch processing. Do jobs in groups, normally the cost of starting each job individually plus doing the job outweighs the cost of doing them all at once. (Bank does all their computation jobs at once overnight).
 
-* Safety first, avoid disaster when allocating resources, don’t try to always try to be optimal.
+* Safety first, avoid disaster when allocating resources, don’t try to always be optimal.
     * Overloading a system can drastically degrade its service. Leave head room for things if you can, don’t cause thrashing.
     * Cleverness only really works if you know the load. CPU scheduling example, be lazy and safe some times
 
@@ -90,7 +90,7 @@ A summary of [Butler Lampson](https://en.wikipedia.org/wiki/Butler_Lampson)'s or
 
 # 4 Fault-tolerance
 
-* End-to-end, Error recovery at application level is required for reliable system (HANDLE YOUR EXCEPTIONS CORRECTLY! Idempotency matters here.
+* End-to-end, Error recovery at application level is required for reliable system. HANDLE YOUR EXCEPTIONS CORRECTLY! Idempotency matters here.
     * Check the end-to-end errors, add intermediate checks if errors are super frequent.
     * Routers again drop packets if something went wrong or notify the sender.
     * Need cheap test for success, also might not see issues until heavy load

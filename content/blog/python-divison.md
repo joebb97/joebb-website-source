@@ -1,109 +1,143 @@
 ---
 title: "The Curious Case of Dividing Numbers in Python"
-date: 2020-09-28
+date: 2020-11-27
 draft: false
+categories: [python]
 author: Joey Buiteweg
 ---
 
-```python
-class Node:
+## Positive Numbers
+If you're in the market for converting form python2 to python3, be aware that there's some fundamental differences in default division of integers. Also beware that these differences won't be automagically resolved by the tool [2to3](https://docs.python.org/3/library/2to3.html).
 
-    def __init__(self, datum=None, next=None):
-        self.datum = datum
-        self.next = next
-
-
-    def __str__(self):
-        return str(self.datum)
-
-
-class ForwardList:
-
-    def __init__(self):
-        self.__head = None
-        self.__tail = None
-        self.__size = 0
-
-    def __str__(self):
-        ret = ""
-        marker = self.__head
-        while marker:
-            ret += str(marker.datum) + " "
-            marker = marker.next
-        ret = ret[:-1]
-        return ret
-
-    def get_size(self):
-        return self.__size
-
-    def append(self, data):
-        if not self.__head:
-            self.__head = Node(data)
-            self.__tail = self.__head
-        else:
-            self.__tail.next = Node(data)
-            self.__tail = self.__tail.next
-        self.__size += 1
-
-    def prepend(self, data):
-        new_head = Node(data, self.__head)
-        self.__head = new_head
-        self.__size += 1
-
-    def pop_back(self):
-        assert self.__head
-        marker = self.__head
-        next = marker.next
-        if not next:
-            self.__head = None
-            self.__tail = None
-            del marker
-        else:
-            while next.next:
-                marker = next
-                next = marker.next
-            marker.next = None
-            del next
-            self.__tail = marker
-        self.__size -= 1
-
-    def pop_front(self):
-        assert self.__head
-        next = self.__head.next
-        del self.__head
-        self.__head = next
-        self.__size -= 1
-
-    def front(self):
-        return self.__head.datum
-
-    def back(self):
-        return self.__tail.datum
-
-    def reverse(self):
-        if self.__size <= 1:
-            return
-        self.__tail = self.__head
-        front = None
-        middle = self.__head
-        back = middle.next
-        while middle:
-            middle.next = front
-            front = middle
-            middle = back
-            if back:
-                back = middle.next
-        self.__head = front
-
-
-    def clear(self):
-        while self.__head:
-            next = self.__head.next
-            del self.__head
-            self.__head = next
-
-        self.__head = None
-        self.__tail = None
-        self.__size = 0
-
+```python3
+$ python3
+Python 3.8.5 (default, Jul 21 2020, 10:42:08)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 / 3
+1.6666666666666667
+>>>
 ```
+
+```python
+$ python
+Python 2.7.16 (default, Jan 27 2020, 04:46:15)
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 / 3
+1
+>>>
+```
+
+As you can see, the `/` operator in python3 leads to floating point divison by default, which can lead to problems if you're doing something like calculating memory page indices!
+```python
+index = addr / self.PAGE_SIZE
+```
+
+To access the integer division behavior in python3, you'll need to use the `//` operator. The code above becomes
+```python
+index = addr // self.PAGE_SIZE
+```
+```python3
+$ python3
+Python 3.8.5 (default, Jul 21 2020, 10:42:08)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 // 3
+1
+>>>
+```
+
+## Negative Numbers
+
+Things get even more interesting when dealing with negative numbers and rounding.
+```python
+$ python
+Python 2.7.16 (default, Jan 27 2020, 04:46:15)
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 / -3
+-2
+>>> int(5 / -3)
+-2
+>>>
+```
+
+```python3
+$ python3
+Python 3.8.5 (default, Jul 21 2020, 10:42:08)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 / -3
+-1.6666666666666667
+>>> 5 // -3
+-2
+>>> int(5 / -3)
+-1
+>>>
+```
+
+From what I can tell, both python2 and python3 round towards negative infinity when doing integer division (`/` in python2 with integer divider and dividend, `//` in python3 with integer divider and dividend). They also do the same thing when converting a negative floating point number to an integer, which is to round towards zero.
+
+```python
+$ python
+Python 2.7.16 (default, Jan 27 2020, 04:46:15)
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> int(5.0 / -3)
+-1
+>>>
+```
+
+```python3
+$ python3
+Python 3.8.5 (default, Jul 21 2020, 10:42:08)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> int(5.0 / -3)
+-1
+>>>
+```
+
+## Compared to C++
+
+Integer division truncation with negative numbers is different in C++, unfortunately.
+```python
+$ python
+Python 2.7.16 (default, Jan 27 2020, 04:46:15)
+[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.37.14)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 / -3
+-2
+>>>
+```
+
+```python3
+$ python3
+Python 3.8.5 (default, Jul 21 2020, 10:42:08)
+[Clang 11.0.0 (clang-1100.0.33.17)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5 // -3
+-2
+```
+
+```cpp
+#include <iostream>
+// a.cpp
+
+int main(){
+    std::cout << int(5 / -3) << std::endl;
+    std::cout << int(5.0 / -3) << std::endl;
+
+}
+```
+
+```bash
+$ g++ a.cpp ; ./a.out
+-1
+-1
+```
+
+Thankfully the behavior for converting a negative floating point number to an `int` has the same behavior between the three languages (as shown by the output of `int(5.0 / -3)` in C++).
+
+Subtle differences in basic behavior of programming languages are always a joy to stumble across at the most inopportune times.

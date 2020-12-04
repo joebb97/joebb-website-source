@@ -1,6 +1,6 @@
 ---
 title: "A Consolidated List of Bad Computer Security Things"
-date: 2020-09-28
+date: 2020-11-27
 draft: false
 categories: [security]
 author: Joey Buiteweg

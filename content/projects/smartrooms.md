@@ -18,7 +18,7 @@ After Sharang leaves, however, they change back to red.
 
 In this project my teammates and I:
 
-* Conceptualized a project to apply a user's settings for a specific rooms in their home automatically when the users presence in a room is detected. User settings included the music playing in a room and the brightness and color of the room's lights.
+* Conceptualized a project to apply a user's settings for a specific rooms in their home automatically when the user's presence in a room is detected. User settings included the music playing in a room and the brightness and color of the room's lights.
 
 * Wrote and debugged firmware for the ESP32 SoC to gather Bluetooth Low Energy RSSI measurements, detect the presence of users carrying an Eddystone beacon, and to communicate with user peripherals like smart lightbulbs and speakers.
 
