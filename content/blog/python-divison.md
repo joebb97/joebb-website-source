@@ -7,7 +7,7 @@ author: Joey Buiteweg
 ---
 
 ## Positive Numbers
-If you're in the market for converting form python2 to python3, be aware that there's some fundamental differences in default division of integers. Also beware that these differences won't be automagically resolved by the tool [2to3](https://docs.python.org/3/library/2to3.html).
+If you're in the market for converting from python2 to python3, be aware that there's some fundamental differences in default division of integers. Also beware that these differences won't be automagically resolved by the tool [2to3](https://docs.python.org/3/library/2to3.html).
 
 ```python3
 $ python3

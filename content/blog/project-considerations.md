@@ -12,7 +12,7 @@ Above all else, it has to work.
 
 System design hints.  Elegant and simple design.
 
-* Keep it [simple](https://en.wikipedia.org/wiki/Occam%27s_razor) ([stupid](https://en.wikipedia.org/wiki/KISS_principle)), don’t be Richard Hendricks from Silicon Valley. Sometimes the strawman or brute force solution is good enough.
+* Keep it [simple](https://en.wikipedia.org/wiki/Occam%27s_razor) ([stupid](https://en.wikipedia.org/wiki/KISS_principle)), don’t be Richard Hendricks from Silicon Valley trying to explain electrons to a user. Sometimes the strawman or brute force solution is good enough.
 
 * Fail faster, build one design to throw it away, you arent going to get it right the first time. Google spends years getting things wrong too (it took them ~seven years to make [Google Spanner](https://www.youtube.com/watch?v=nvlt0dA7rsQ)).
 
@@ -91,7 +91,7 @@ SECURITY
 * Rational paranoia vs analysis paralysis.
 
 You have to be [ethical](https://www.acm.org/code-of-ethics), professional, and excellent.
-* Acknowledge the [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect) and [four stages of competence](https://en.wikipedia.org/wiki/Four_stages_of_competence), [Blub programmers](https://en.wikipedia.org/wiki/Paul_Graham_(programmer)#Blub).
+* Acknowledge the [Dunning-Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect), [four stages of competence](https://en.wikipedia.org/wiki/Four_stages_of_competence), and [Blub programmers](https://en.wikipedia.org/wiki/Paul_Graham_(programmer)#Blub).
 
 Database for your equipment.
 
