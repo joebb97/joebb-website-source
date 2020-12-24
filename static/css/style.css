@@ -83,9 +83,10 @@ iframe[title="YouTube Video"] {
     padding-top: .75rem;
 }
 
-.highlight > pre {
+.highlight {
     /* background-color: MistyRose !important; */
     /* background-color: lightcyan !important; */
     background-color: #17111e !important;
+    margin-bottom: .75em;
     /* color: black !important; */
 }
