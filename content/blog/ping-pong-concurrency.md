@@ -2,6 +2,7 @@
 title: "A Small Concurrency Example in Various Languages"
 date: 2020-12-22
 draft: false
+toc: true
 categories: [python, rust, golang, cpp]
 author: Joey Buiteweg
 ---

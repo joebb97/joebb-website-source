@@ -2,6 +2,7 @@
 title: "A Consolidated List of Bad Computer Security Things"
 date: 2020-11-27
 draft: false
+toc: true
 categories: [security]
 author: Joey Buiteweg
 ---
@@ -136,7 +137,7 @@ If you see one of these acronyms or ideas somewhere in your code or product then
 * Gadgets of all kind
 
 
-## In contrast, the things we need:
+## In contrast, the things we need
 
 * Secure keys and key distribution
 
