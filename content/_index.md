@@ -12,8 +12,3 @@ My main interests lie in any of the intersections of Computer Security, Embedded
 In my spare time I enjoy producing music, playing the Saxophone and Piano, and staying healthy through strength training and playing Ultimate Frisbee.
 I also enjoy watching sports and playing video games, especially Super Smash Bros.
 
-If you'd like to see some projects I've worked on, head to the [projects tab]({{< ref "/projects">}})
-
-Otherwise feel free to look around!
-
-This site was made using Hugo, Bootstrap, and some of my own CSS styling. Here is the [source code](https://github.com/joebb97/joebb-website-source)

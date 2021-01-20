@@ -1,13 +1,23 @@
 {{ define "main" }}
     <h2>{{ .Site.Params.info }}</h2>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 px-0 mb-3">
-                <img class="img-fluid thumbnail" src="{{ "me.jpg" | absURL }}" alt="A picture of Joey"></img>
-            </div>
-            <div class="col homepage-content">
-                {{ .Content }}
-            </div>
+    <div class="row">
+        <div class="col-lg-6 pr-0 mb-3">
+            <img class="img-fluid thumbnail" src="{{ "me.jpg" | absURL }}" alt="A picture of Joey"></img>
+        </div>
+        <div class="col homepage-content">
+            {{ .Content }}
         </div>
     </div>
+    <p>
+    If you’d like to see some projects I’ve worked on, head to the
+        <a href="/projects">projects tab</a>.
+        <br>
+    Otherwise feel free to look around!
+    </p>
+    <p>
+        This site was made using Hugo, Bootstrap, and some of my own CSS styling.
+        <br>
+        Here is the
+        <a href="https://github.com/joebb97/joebb-website-source" rel="noopener" target="_blank">source code</a>.
+    </p>
 {{ end }}
