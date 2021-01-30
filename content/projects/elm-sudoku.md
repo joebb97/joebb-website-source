@@ -8,7 +8,7 @@ author: Joey Buiteweg
 
 ## The Finished Project
 
-It lives [here on netlify](https://elm-sudoku.netlify.app)
+It lives [here on Netlify](https://elm-sudoku.netlify.app)
 
 The source code lives [here on GitHub](https://github.com/joebb97/sandbox/tree/master/elm/sudoku)
 
@@ -18,7 +18,7 @@ This app can solve user specified [Sudoku](https://en.wikipedia.org/wiki/Sudoku)
 
 Both user specified and generated boards can be solved by simply clicking the "solve" button.
 
-The solver can solve the "world's hardest wikipedia board" (shown below) in roughly a second or so. Feel free to try it out!
+The solver can solve the "world's hardest Sudoku board" (shown below) in roughly a second or so. Feel free to try it out!
 ![board](/sudoku.jpg) 
 
 _Note: The "wikipedia board" button generates the same board from the Wikipedia article on Sudoku, which can also be solved by the user or the solver. It was used for testing purposes._
