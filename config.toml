@@ -1,4 +1,5 @@
 baseURL = "https://www.josephbuiteweg.com/"
+defaultContentLanguage = "en-us"
 languageCode = "en-us"
 title = "Joey Buiteweg"
 [params]
@@ -6,11 +7,6 @@ title = "Joey Buiteweg"
   description = "Joey's Personal Website/Blog"
 
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 1
 
   [[menu.main]]
     identifier = "blog"
