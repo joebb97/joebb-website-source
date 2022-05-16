@@ -12,4 +12,4 @@ Email: joebb \<at\> umich \<dot\> edu
 
 [Tweeter](https://twitter.com/joeybuiteweg)
 
-[MeTube]()
+[MeTube](https://www.youtube.com/channel/UCJElZ13kjyFJYqNM8kVP-jg)
