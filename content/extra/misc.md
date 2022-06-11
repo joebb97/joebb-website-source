@@ -36,3 +36,7 @@ Yes everything on this site is my own personal opinion and doesn't necessarily r
 Much of programming and tech is quite subjective with only some absolutes. The above disclaimer is quite important.
 
 If you disagree with the content you see here, don't hesitate to reach out. I love discussing most all topics related to tech, even the most subjective ones.
+
+## Will you tell us even more about yourself?
+
+Sure! Head on over to [this pagey dagey]({{< ref "/about" >}})
