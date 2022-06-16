@@ -42,3 +42,4 @@ It makes very happy to see the progress that society is making towards both equa
 * Learning
   * I have a strong desire to learn all areas of critical importance to computer systems which span a diverse collection of niches. I'm very excited to contribute to these spaces, both in research and in practice, in my lifetime as a Computer Professional.
   * Compilers, Programming Languages, Networks, Operating Systems, Machine Learning, Computer Theory, Cryptography, there are many many many more niches. I'm a life long learner. We all should be. No one person can learn all of this, but I sure can have fun trying!
+  * We all should adopt a [growth mindset](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve) (watch the talk and read the book, it's fantastic!). We can learn what we want to learn. All it takes is time, sometimes money, and always some effort.
