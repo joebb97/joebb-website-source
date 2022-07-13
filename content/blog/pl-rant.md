@@ -162,7 +162,7 @@ But `golang` is **very intentionally** left off of the list.
 Because of how I write
 ```golang
 if err != nil {
-    return "someFootGunValueYouCouldUse", nil
+    return "someFootGunValueYouCouldUse", err
 }
 ```
 every other line, which means it violates the points, _well researched and well designed_, and _safe by default_.
