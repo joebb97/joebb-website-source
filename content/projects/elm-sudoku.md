@@ -10,7 +10,7 @@ author: Joey Buiteweg
 
 It lives [here on Netlify](https://elm-sudoku.netlify.app)
 
-The source code lives [here on GitHub](https://github.com/joebb97/sandbox/tree/master/elm/sudoku)
+The source code lives [here on GitHub](https://github.com/joebb97/elm_sudoku/tree/master)
 
 ## Supported Functionality
 
