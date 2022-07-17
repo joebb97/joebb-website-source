@@ -18,9 +18,9 @@ I wanted to be more comfortable and competent with the provided networking libra
 
 I implemented a simple Echo Server and Client in both Rust and Go.
 
-Here is the [Rust source code](https://github.com/joebb97/sandbox/tree/master/rust/echo_net)
+Here is the [Rust source code](https://github.com/joebb97/rust_echo_net/tree/798ede6c0cb9f6de6aad2cc628207e4f86bd76f7)
 
-And here is the [Go source code](https://github.com/joebb97/sandbox/tree/master/go/src/echo_net)
+And here is the [Go source code](https://github.com/joebb97/go_echo_net/tree/9711284b37e70a49ed33428c57ff5c6fc17f884f)
 
 Both implementations support the same functionality which is sending either TCP or UDP messages from a client to a server and having the server "echo" back whatever the client sent.
 
