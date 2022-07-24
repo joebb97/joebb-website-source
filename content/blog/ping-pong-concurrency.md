@@ -15,7 +15,7 @@ This task is a light intoduction to synchronization primitives like mutexes and 
 
 I figured it'd be interesting to see what this task looks like in different programming languages, so I decided to code it in my four favorite programming languages (python, rust, golang, c++, in that order) to get a sense of their concurrency libraries.
 
-My methodology was to only use native concurrency primitives supported by the languages. Additionally, if a language supported message-passing concurrency via channels as well as traditional Hoare monitors, I wrote an implementation with both models.
+My methodology was to only use native concurrency primitives supported by the languages. Additionally, if a language supported message-passing concurrency via channels as well as traditional Mesa monitors, I wrote an implementation with both models.
 
 Let's now take a look at the examples. The source code is available in my [sandbox monorepo](https://github.com/joebb97/sandbox)(just run `$ find . -name ping_pong -type d` to locate the specific directories).
 
