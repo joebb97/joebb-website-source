@@ -4,13 +4,13 @@ draft: false
 author: Joey Buiteweg
 ---
 
-I did a fair amount of hands-on learning via projects and labs in school. Here's some summaries of the applied work involved in EECS (electrical engineering + computer science) courses I took.
+I did a fair amount of hands-on learning via projects and labs in school. Here's some summaries of the applied work involved in some EECS (electrical engineering + computer science) courses I took.
+
+The topics and work mentioned as part of each course are by no-means exhaustive but rather just a summary. This is also not a complete list of the EECS courses I took but are again just a summary.
 
 Sadly I can't share source code or implementation details in the spirit of keeping current University of Michigan students honest.
 
 I'm hoping this catalog can help curious eyes get an idea of what goes into an EECS education.
-
-The topics and work mentioned as part of each course are by no-means exhaustive but rather just a summary.
 
 ### Undergrad
 
