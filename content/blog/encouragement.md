@@ -29,6 +29,6 @@ What I'm still learning and trying to hone is the concept that my goals **do not
 
 I think the more transparent we are about what we know, what we don't know, and how we learned what we know, the better the Imposter Syndrome phenomenon will get.
 
-Achieving transparency is difficult because humility and good intention is difficult to convey by default. Learning in public helps. Sharing our failures helps. Being kind helps. Avoiding being a "know-it-all" helps. Placing these values into our communities' and nurturing their sense of belonging and acceptance, helps.
+Achieving transparency is difficult because humility and good intention is difficult to convey by default. Learning in public helps. Sharing our failures helps. Being kind helps. Avoiding being a "know-it-all" helps. Placing these values into our communities and nurturing their sense of belonging and acceptance, helps.
 
 Doing the same in our companies will also help.
