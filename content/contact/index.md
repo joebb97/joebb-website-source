@@ -12,4 +12,6 @@ Email: joebb \<at\> umich \<dot\> edu
 
 [Tweeter](https://twitter.com/joeybuiteweg)
 
+{{< rawhtml >}}<p> <a rel="me" href="https://fosstodon.org/@joebb">Mastodon</a></p> {{< /rawhtml >}}
+
 [MeTube](https://www.youtube.com/channel/UCJElZ13kjyFJYqNM8kVP-jg)
