@@ -7,7 +7,7 @@
             <span class="article-categories">
                 Categories: 
                 {{ range .Params.categories }}
-                    <a href="{{ "categories/" | absURL }}{{ . }}">{{ . }}</a>
+                    <a href="{{ "categories/" | relURL }}{{ . }}">{{ . }}</a>
                 {{ end }}
             </span>
             {{ end }}
@@ -16,7 +16,7 @@
                 <span class="article-tags">
                     Tags: 
                     {{ range .Params.tags }}
-                        <a href="{{ "tags/" | absURL }}{{ . | urlize}}">#{{ . }}</a>
+                        <a href="{{ "tags/" | relURL }}{{ . | urlize}}">#{{ . }}</a>
                     {{ end }}
                 </span>
         {{ end }}
