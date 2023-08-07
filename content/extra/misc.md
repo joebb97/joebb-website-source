@@ -39,4 +39,4 @@ If you disagree with the content you see here, don't hesitate to reach out. I lo
 
 ## Will you tell us even more about yourself?
 
-Sure! Head on over to [this pagey dagey]({{< ref "/about" >}})
+Sure! Here's an [about page]({{< ref "/about" >}})

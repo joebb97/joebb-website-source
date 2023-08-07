@@ -13,7 +13,7 @@
     <ul>
         {{ range .Pages }}
         <li class="mb-2">
-            <a href="{{.Permalink}}">{{.Title}}</a>
+            <a href="{{.Permalink | relURL }}">{{.Title}}</a>
             {{ partial "articleInfoLess.html" . }}
         </li>
         {{ end }}
