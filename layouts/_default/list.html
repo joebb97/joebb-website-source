@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main>
     <article>
-        <header class="mt-4 text-center" >
+        <header class="mt-4 text-center">
             <h1 class="post-title">{{ .Title }}</h1>
             <hr>
         </header>
@@ -13,8 +13,22 @@
     <ul>
         {{ range .Pages }}
         <li class="mb-2">
-            <a href="{{.Permalink | relURL }}">{{.Title}}</a>
-            {{ partial "articleInfoLess.html" . }}
+            <a href="{{ .Permalink | relURL }}">{{.Title}}</a>
+            <div class="article-info">
+                {{ if .Params.date }}
+                <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+                {{ end }}
+                <div class="article-taxonomies">
+                    {{ if .Params.categories }}
+                    <span class="article-categories">
+                        Categories:
+                        {{ range .Params.categories }}
+                        <a href="{{ " categories/" | relURL }}{{ . }}">{{ . }}</a>
+                        {{ end }}
+                    </span>
+                    {{ end }}
+                </div>
+            </div>
         </li>
         {{ end }}
     </ul>

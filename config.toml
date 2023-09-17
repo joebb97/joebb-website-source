@@ -5,6 +5,7 @@ title = "Joey Buiteweg"
 [params]
   author = "Joey Buiteweg"
   description = "Joey's Personal Website/Blog"
+  gravatar = "joey@joeybuiteweg.com"
 
 [menu]
 
@@ -32,16 +33,8 @@ title = "Joey Buiteweg"
     url = "/contact/"
     weight = 5
 
-  # [[menu.main]]
-  #   identifier = "dei"
-  #   name = "DEI"
-  #   url = "/dei/"
-  #   weight = 4
-
 [taxonomies]
 category = "categories"
-tag = "tags"
-series = "series"
 
 [privacy]
   [privacy.googleAnalytics]

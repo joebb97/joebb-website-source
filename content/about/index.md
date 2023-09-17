@@ -9,15 +9,15 @@ _Identities should not decide who gets to have an opinion and who does not, but 
 
 First, I'd like to acknowledge that as a cis-gendered, straight, white man, I am incredibly blessed and privileged to have lived the life I have. When others have had to worry about their physical and mental safety, I've benefited from the stability of the status quo.
 
-I am fortunate to have grown up in Ann Arbor, MI, and attended public schools that are well-funded and have a diverse student body. I am immensely proud of the fact that I solely attended publicly funded schools and that I am where I'm at today. I view it as proof that a community, dare I say even a country, that values public education for all its children can do incredible good for this world. Good schooling shouldn't cost money aside from taxes, and quality shouldn't depend on where you live.
+I am fortunate to have grown up in Ann Arbor, MI, and attended public schools that are well-funded and have a diverse student body. I am immensely proud of the fact that my achievements having solely attended publicly funded schools. I view it as proof that a community that values public education for all its children can do incredible good. Good schooling shouldn't cost money aside from taxes, and quality shouldn't depend on where you live.
 
-I attribute any success I have to the fact that I had a stable upbringing, two wonderful and successful parents who I view as role-models, and a strong network of people supporting me along my journey in life. Knowing where your next meal is coming from and avoiding [decision fatigue](https://en.wikipedia.org/wiki/Decision_fatigue) can go a long way for a kid and their family.
+Any success I have can be attributed to my stable upbringing, two wonderful and successful parents who I view as role-models, and a strong network of people supporting me along my journey in life. Knowing where your next meal is coming from and avoiding [decision fatigue](https://en.wikipedia.org/wiki/Decision_fatigue) can go a long way for a kid and their family.
 
-It makes me happy to see the progress that society is making toward both equality and equity. We are being vocal about what we know is wrong, which I hope will lead to serious change.
+It makes me happy to see the progress that society is making toward both equality and equity. We are being vocal about what we know is wrong; let's hope it will lead to serious change.
 
 # My Interests
 ## Technology
-Computers and all facets of them. Meaningfully improving the lives of others with computers.
+I love Computers and all facets of them. They are fascinating and can meaningfully improve people's lives.
 
 ## Music
 Theory, production, classical, hip-hop, jazz, piano, saxophone.
@@ -58,3 +58,7 @@ I have a strong desire to learn all areas of critical importance to computer sys
 Compilers, Programming Languages, Networks, Operating Systems, Machine Learning, Computer Theory, Cryptography, it's all interesting to me. I'm a life long learner. We all should be. No one person can learn or master all these topics, but an effort is beneficial.
 
 We all should adopt a [growth mindset](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve) (watch the talk and read the book, it's fantastic!). We can learn what we want to learn. All it takes is time, sometimes money, and always some effort.
+
+## Equity
+
+We should avoid discrimination in the workplace, higher-education, and the rest of society in any way possible. Technology provide net good to the world, not marginalize its people.

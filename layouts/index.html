@@ -1,32 +1,34 @@
 {{ define "main" }}
-    <h2>{{ .Site.Params.info }}</h2>
-    <div class="row">
-        <div class="col-lg-7 mb-3">
-            <picture>
-            <source class="img-fluid thumbnail" srcset="{{ "me.avif" | relURL }}" type="image/avif">
-            <img class="img-fluid thumbnail" src="{{ "me.jpg" | relURL }}" alt="A picture of Joey"></img>
-            </picture>
-        </div>
-        <div class="col homepage-content">
-            {{ .Content }}
-        </div>
+<h2>{{ .Site.Params.info }}</h2>
+<div class="row">
+    <div class="col-lg-7 mb-3">
+        <picture>
+            <source class="img-fluid thumbnail" srcset="/me.avif" type="image/avif">
+            <img class="img-fluid thumbnail" src="/me.jpg" alt="A picture of Joey"></img>
+        </picture>
     </div>
-    <p>
-My main technological interests lie in any of the intersections of Computer Security, Embedded Systems, Web Systems, Distributed Systems, and Networking.
-    <p>
-    <p>
-    In my spare time I enjoy producing music, playing the Saxophone and Piano, and staying healthy through strength training and playing Ultimate Frisbee. I also enjoy watching sports and playing video games.
-    <p>
-    <p>
+    <div class="col homepage-content">
+        {{ .Content }}
+    </div>
+</div>
+<p>
+    My main technological interests lie in any of the intersections of Computer Security, Embedded Systems, Web Systems,
+    Distributed Systems, and Networking.
+<p>
+<p>
+    In my spare time I enjoy producing music, playing the Saxophone and Piano, and staying healthy through strength
+    training and playing Ultimate Frisbee. I also enjoy watching sports and playing video games.
+<p>
+<p>
     If you’d like to see some projects I’ve worked on, head to the
-        <a href="/projects">projects tab</a>.
-        <br>
+    <a href="/projects">projects tab</a>.
+    <br>
     Otherwise feel free to look around!
-    </p>
-    <p>
-        This site was made using Hugo, Bootstrap, and some of my own CSS styling.
-        <br>
-        Here is the
-        <a href="https://github.com/joebb97/joebb-website-source" rel="noopener" target="_blank">source code</a>.
-    </p>
+</p>
+<p>
+    This site was made using Hugo, Bootstrap, and some of my own CSS styling.
+    <br>
+    Here is the
+    <a href="https://github.com/joebb97/joebb-website-source" rel="noopener" target="_blank">source code</a>.
+</p>
 {{ end }}

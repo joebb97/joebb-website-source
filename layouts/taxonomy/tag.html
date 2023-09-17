@@ -14,13 +14,11 @@
         <div class="content">
             {{ .Summary }}
         </div>
-        {{ partial "articleInfoDate.html" . }}
-<!--         {{ if .Truncated }}
-            <div class="read-more">
-                <a href="{{ .RelPermalink }}">{{ i18n "readMore" | humanize }}</a>
-            </div>
-        {{ end }} -->
-
+        <div class="article-info">
+            {{ if .Params.date }}
+                <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+            {{ end }}
+        </div>
     </article>
     {{ end }}
 

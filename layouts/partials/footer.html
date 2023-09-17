@@ -4,14 +4,11 @@
         <div class="col pl-0">
             © {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
             <br>
-            <span>
-            {{ i18n "powered" | humanize }} <a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a>
-            </span>
         </div>
         <div class="col text-right pr-0">
                 <a href="{{ "/contact/" | relURL }}">Contact</a>
                 <br>
-                <a href="{{ "/extra/misc/" | relURL }}">Misc</a>
+                <a href="{{ "/extra/misc/" | relURL }}">About this site</a>
         </div>
     </div>
 </div>

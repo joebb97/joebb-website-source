@@ -1,18 +1,13 @@
 {{ define "main" }}
-
-    <article class="post">
-        <header class="mt-4 text-center" >
-            <h1 class="post-title">{{ .Title }}</h1>
-            {{ partial "articleInfoFull.html" . }}
-            <hr>
-        </header>
-        {{ partial "toc.html" . }}
-        <div class="content">
-            {{ .Content }}
-        </div>
-    </article>
-    {{ if .Site.DisqusShortname }}
-        {{ template "_internal/disqus.html" . }}
-    {{ end }}
-
+<article class="post">
+    <header class="mt-4 text-center">
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{ partial "articleInfo.html" . }}
+        <hr>
+    </header>
+    {{ partial "toc.html" . }}
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
 {{ end }}
