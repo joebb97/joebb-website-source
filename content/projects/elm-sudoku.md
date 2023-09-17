@@ -8,7 +8,7 @@ author: Joey Buiteweg
 
 ## The Finished Project
 
-It lives [here on Netlify](https://elm-sudoku.netlify.app)
+It lives [here on CF Pages](https://elm-sudoku.pages.dev/)
 
 The source code lives [here on GitHub](https://github.com/joebb97/elm_sudoku/tree/master)
 
@@ -16,12 +16,12 @@ The source code lives [here on GitHub](https://github.com/joebb97/elm_sudoku/tre
 
 This app can solve user specified [Sudoku](https://en.wikipedia.org/wiki/Sudoku) boards, as well as generate boards for users to test their abilities on.
 
-Both user specified and generated boards can be solved by simply clicking the "solve" button.
+Both user specified and generated boards can be solved by clicking the "solve" button.
 
-The solver can solve the "world's hardest Sudoku board" (shown below) in roughly a second or so. Feel free to try it out!
+The solver can solve the "world's hardest Sudoku board" (shown below) in roughly a second. Feel free to try it out!
 ![board](/sudoku.jpg) 
 
-_Note: The "wikipedia board" button generates the same board from the Wikipedia article on Sudoku, which can also be solved by the user or the solver. It was used for testing purposes._
+_Note: The "wikipedia board" button generates the same board from the Wikipedia article on Sudoku, which can be solved by the user or the solver. It was used for testing purposes._
 
 ## Quick Bullets
 
@@ -46,14 +46,14 @@ My goals in this project were to:
 * Learn a functional language to make adopting the paradigm easier in future projects and in my work.
 
 * Increase my ability to contribute correct, efficient, code to the frontends of projects, and further myself as an all-stack developer.
-    * I love most every aspect of computing, from logic gates to firmware and operating systems all the way up to web systems!
+    * I love almost every aspect of computing, from logic gates to firmware and operating systems all the way up to web systems!
 
-* Make a simple, efficient, and useful web application for real people.
+* Make a simple, efficient, and mildly useful web application.
 
-I'd say I accomplished these goals in this project.
+I feel accomplished these goals in this project.
 
 ## Reflections
 
 It might be nice to support a "clear" button that keeps the same generated board, in case the user wants to start over. I'll add this functionality if enough people request it.
 
-It might also be nice to support importing and exporting boards, but since I'm unaware of a universal format for storing sudoku boards I don't see much utility to this.
+It might be nice to support importing and exporting boards, but since I'm unaware of a universal format for storing sudoku boards I don't see much utility to this.

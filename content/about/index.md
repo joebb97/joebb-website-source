@@ -11,16 +11,15 @@ First, I'd like to acknowledge that as a cis-gendered, straight, white man, I am
 
 I am fortunate to have grown up in Ann Arbor, MI, and attended public schools that are well-funded and have a diverse student body. I am immensely proud of the fact that I solely attended publicly funded schools and that I am where I'm at today. I view it as proof that a community, dare I say even a country, that values public education for all its children can do incredible good for this world. Good schooling shouldn't cost money aside from taxes, and quality shouldn't depend on where you live.
 
-I attribute any success I have to the fact that I had a stable upbringing, two wonderful and successful parents who I look up to as role models, 
-and a strong network of people supporting me along my journey in life. Knowing where your next meal is coming from and avoiding [decision fatigue](https://en.wikipedia.org/wiki/Decision_fatigue) can go a long way for a kid and their family.
+I attribute any success I have to the fact that I had a stable upbringing, two wonderful and successful parents who I view as role-models, and a strong network of people supporting me along my journey in life. Knowing where your next meal is coming from and avoiding [decision fatigue](https://en.wikipedia.org/wiki/Decision_fatigue) can go a long way for a kid and their family.
 
 It makes me happy to see the progress that society is making toward both equality and equity. We are being vocal about what we know is wrong, which I hope will lead to serious change.
 
 # My Interests
-## Technology 
+## Technology
 Computers and all facets of them. Meaningfully improving the lives of others with computers.
 
-## Music 
+## Music
 Theory, production, classical, hip-hop, jazz, piano, saxophone.
 
 I was a member of the Tenor Saxophone section in the Michigan Marching Band for four years. More info on my [LinkedIN](https://www.linkedin.com/in/joebb/details/organizations/).

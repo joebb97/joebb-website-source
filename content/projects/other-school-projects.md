@@ -1,18 +1,22 @@
 ---
-title: "Learning by doing: Some Stuff I did in School"
+title: "Learning by doing: School Courses"
 draft: false
 author: Joey Buiteweg
 ---
 
-I did a fair amount of hands-on learning via projects and labs in school. Here's some summaries of the applied work involved in some EECS (electrical engineering + computer science) courses I took.
+I did a fair amount of hands-on learning via projects and labs in school. Listed are summaries of the applied work involved in some EECS (electrical engineering + computer science) courses I took.
 
-The topics and work mentioned as part of each course are by no-means exhaustive but rather just a summary. This is also not a complete list of the EECS courses I took but are again just a summary.
+The topics and work mentioned as part of each course are not exhaustive, nor is this a complete list of the EECS courses I took.
 
 Sadly I can't share source code or implementation details in the spirit of keeping current University of Michigan students honest.
 
 I'm hoping this catalog can help curious eyes get an idea of what goes into an EECS education.
 
 ### Undergrad
+
+###### EECS 215: Analog Circuits
+* Labs for learning the basics of AC and DC analog circuits using oscilloscopes, function generators, and breadboards.
+* Matlab and LTSpice for homework assignments. Math used includes calculus, complex numbers, and mild linear algebra.
 
 ###### EECS 270: Intro to Digital Logic Design
 * All labs/projects completed in Verilog flashed onto an FPGA SoC with Switches, Push Buttons, and Hex Displays
@@ -23,15 +27,15 @@ I'm hoping this catalog can help curious eyes get an idea of what goes into an E
 
 ###### EECS 281: Data Structures and Algorithms
 * All projects written in C++
-* Letterman: A program to find paths between words, where steps in the path involve some change to the word's letters. Any combo of: swap letters, modify one letter, delete one letter
+* Letterman: A program to find paths between words, where steps in the path involve changes to the word's letters. Any combo of: swap letters, modify one letter, delete one letter
   * Application of Breadth First Search and Depth First Search through a dictionary of words
-* SillyQL: A toy in-memory SQL implementation which heavily utilized vectors, hash sets and-based BST sets
+* SillyQL: A toy in-memory SQL implementation which utilized vectors, hash sets and-based BST sets.
 * MineEscape: recursive 2D grid movement based on various implementations of a priority queue (sorted vector, binary heap, and pairing heap)
 * Various solutions to dressed up representations of the Traveling Salesman Problem, the Knapsack Problem, and finding Minimum Spanning Trees
-  * Implementations leverage Prim's algorithm for MST as well as branch and bound solutions to the TSP and Knapsack
+  * Implementations leverage Prim's algorithm and branch and bound algorithms.
 
 ###### EECS 370: Intro to Computer Architecture
-* All projects written in C (for no real reason mind you, lol)
+* All projects written in C (for no good reason mind you)
 * An assembler and simulator/emulator for a toy RISC machine called LC2K (little computer 2000)
 * A software simulation of a pipelined implementation of LC2K.
 * An updated assembler and linker of L2CK assembly programs that utilized symbol and relocation tables
@@ -94,9 +98,9 @@ I'm hoping this catalog can help curious eyes get an idea of what goes into an E
 * I did learn about P and NP in this class which was the most enjoyable part
 
 ###### EECS 588: Advanced Computer Security
-* Read and discussed assigned papers in sidechannel research
+* Read and discussed assigned papers in side-channel research
 * I presented the [ARMageddon Cache Attack Paper](https://drive.google.com/file/d/1JtojNQMeBst_WjY6bOv2ZyxAjr3RGuMD/view?usp=sharing)
-* Implemented the [Cache Template Attacks](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-gruss.pdf) using the Flush+Flush and Flush+Reload sidechannel primitives
+* Implemented the [Cache Template Attacks](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-gruss.pdf) using the Flush+Flush and Flush+Reload side-channel primitives
   * Here's our [project writeup](https://drive.google.com/file/d/1UlQ3ZcLV9ojJhBk7LCD0l9Tr962oMMyW/view?usp=sharing)
 
 ###### EECS 592: Artificial Intelligence
