@@ -1,0 +1,25 @@
+<div class="article-info">
+    {{ if .Params.author }}
+    by {{ .Params.author }}
+    {{ end }}
+    {{ if .Params.date }}
+    <div>
+        Published {{ .Params.date.Format "2006-01-02" }}
+    </div>
+    {{ end }}
+    {{ if .Params.lastUpdated }}
+    <div>
+        Last updated {{ .Params.lastUpdated }}
+    </div>
+    {{ end }}
+    <div class="article-taxonomies">
+        {{ if .Params.categories }}
+        <span class="article-categories">
+            Categories:
+            {{ range .Params.categories }}
+            <a href="{{ " categories/" | relURL }}{{ . }}">{{ . }}</a>
+            {{ end }}
+        </span>
+        {{ end }}
+    </div>
+</div>
