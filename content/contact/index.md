@@ -2,7 +2,7 @@
 title: "Contact Joey"
 ---
 
-Email: me \<at\> joeybuiteweg \<dot\> com
+Email: joey \<at\> joeybuiteweg \<dot\> com
 
 [GitHub](https://github.com/joebb97)
 
