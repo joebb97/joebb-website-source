@@ -17,7 +17,7 @@ I figured it'd be interesting to see what this task looks like in different prog
 
 My methodology was to only use native concurrency primitives supported by the languages. Additionally, if a language supported message-passing concurrency via channels as well as traditional Mesa monitors, I wrote an implementation with both models.
 
-Let's now take a look at the examples. The source code is available in my [sandbox monorepo](https://github.com/joebb97/sandbox)(just run `$ find . -name ping_pong -type d` to locate the specific directories).
+Let's now take a look at the examples. The source code is available in my [sandbox monorepo](https://github.com/joebb97/sandbox) (just run `$ find . -name ping_pong -type d` to locate the specific directories).
 
 ## Golang
 
@@ -72,7 +72,7 @@ If `theChannel` was buffered with a size of one, the call to put a value into th
 
 Running the example we see the desired output.
 
-```bash
+```bash {linenos=inline}
 $ go run main.go
 ping
 pong

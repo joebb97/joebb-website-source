@@ -1,5 +1,5 @@
 ---
-title: Joseph Buiteweg
+title: Joey Buiteweg
 ---
 
 # Welcome! 

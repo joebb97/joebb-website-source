@@ -11,18 +11,27 @@
 
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | relURL }}">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?rnd={{ now.Unix }}" />
-<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+{{ with resources.GetRemote 
+   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $checksum := .Content | sha256 }}
+    {{ if not (eq $checksum "2c0f3dcfe93d7e380c290fe4ab838ed8cadff1596d62697f5444be460d1f876d")}}
+        {{ errorf "checksum %s doesn't match" $checksum }}
+    {{ end }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}"/>
+  {{ end }}
+{{ end }}
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+{{ with resources.Get "css/style.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
+{{ end }}
+{{ with resources.Get "fonts/roboto.woff2" }}
+<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+{{ end }}
+{{ with resources.Get "css/roboto.css" | resources.Minify }}
+<link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
+{{ end }}
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet"> -->
 <!-- <script src=" {{ "yavascript.js" | relURL }}"></script> -->
-
-<!-- Article tags -->
-<!-- <meta property="article:published_time" content="">
-<meta property="article:modified_time" content="">
-<meta property="article:tag" content="">
-<meta property="article:publisher" content="https://www.facebook.com/XXX"> -->
-
-<!-- {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }} -->
-<!--     {{ template "_internal/google_analytics_async.html" . }} -->
-<!-- {{ end }} -->

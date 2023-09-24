@@ -1,5 +1,4 @@
 /* Some basic styling, Bootstrap for everything else */
-
 body {
     color: #444;
     background-color: LavenderBlush;
@@ -68,9 +67,11 @@ a:hover {
     /* margin-bottom: 3px; */
 }
 
-code {
+code:not([class]) {
     /* color: black; */
     color: #000C78;
+    background-color: #eedcfc;
+    /* background-color: lavender; */
 }
 
 iframe[title="YouTube Video"] {
@@ -78,10 +79,19 @@ iframe[title="YouTube Video"] {
     padding-top: .75rem;
 }
 
+pre code:not([class]) {
+    background-color: LavenderBlush;
+    color: black;
+}
+
+pre code[class*='language-'] span {
+    background-color: #17111e !important;
+}
+
 .highlight {
     /* background-color: MistyRose !important; */
     /* background-color: lightcyan !important; */
-    background-color: #17111e !important;
     margin-bottom: .75em;
+    /* padding: 15px; */
     /* color: black !important; */
 }

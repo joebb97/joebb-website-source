@@ -1,7 +1,8 @@
-baseURL = "https://www.josephbuiteweg.com/"
+baseURL = "https://www.joeybuiteweg.com/"
 defaultContentLanguage = "en-us"
 languageCode = "en-us"
 title = "Joey Buiteweg"
+enableRobotsTXT = true
 [params]
   author = "Joey Buiteweg"
   description = "Joey's Personal Website/Blog"
