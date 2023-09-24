@@ -11,18 +11,7 @@
 
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | relURL }}">
-{{ with resources.GetRemote
-   "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" }}
-  {{ with .Err }}
-    {{ errorf "%s" . }}
-  {{ else }}
-    {{ $checksum := .Content | sha256 }}
-    {{ if not (eq $checksum "2c0f3dcfe93d7e380c290fe4ab838ed8cadff1596d62697f5444be460d1f876d")}}
-        {{ errorf "checksum %s doesn't match" $checksum }}
-    {{ end }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}"/>
-  {{ end }}
-{{ end }}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 {{ with resources.Get "css/style.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
 {{ end }}
