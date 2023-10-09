@@ -11,7 +11,6 @@
 
 <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
 <link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | relURL }}">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 {{ with resources.Get "css/style.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
 {{ end }}

@@ -14,9 +14,6 @@ h1.post-title {
     font-family: "Roboto";
 }
 
-ul.terms {
-}
-
 .content > h2 {
     font-size: 2rem;
     margin-top: 2rem;
@@ -28,19 +25,20 @@ ul li ul {
 }
 
 .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #ff9bb2;
     font-family: "Roboto"; 
 }
 
-/* Use bootstrap's medium devices breakpoint */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column!important;
-    }
+.navbar-col {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
 
-    .navbar-brand {
-        margin-right: 0px;
-    }
+.navbar-nav {
+    display: inline;
+    margin-left: auto;
 }
 
 .navbar-brand {
@@ -48,18 +46,55 @@ ul li ul {
     font-weight: bolder;
 }
 
-.nav-link {
+.navbar-title a {
+    text-decoration: none;
     color: black;
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: bolder;
+}
+
+.homepage-row {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
+    grid-template-columns: 1fr 1fr;
+}
+
+.homepage-col {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.homepage-image {
+    max-width: 100%;
+}
+
+.homepage-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.homepage-welcome {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
 }
 
 a {
-    color: #88003e;
+    color: maroon;
+}
+
+a:link {
+    text-decoration: none
 }
 
 a:hover {
+    text-decoration: underline;
     color: #004188
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .homepage-content > h1 {
@@ -94,4 +129,19 @@ pre code[class*='language-'] span {
     margin-bottom: .75em;
     /* padding: 15px; */
     /* color: black !important; */
+}
+
+/* Use bootstrap's medium devices breakpoint */
+@media (max-width: 790px) {
+    .navbar {
+    }
+
+    .homepage-row {
+        background-color: red;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-brand {
+        margin-right: 0px;
+    }
 }
