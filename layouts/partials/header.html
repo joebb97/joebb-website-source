@@ -1,11 +1,13 @@
-<nav class="navbar navbar-expand">
-    <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
-    <div class="navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            <li class="nav-item"><a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
-            {{ end }}
-        </ul>
+<nav class="navbar">
+    <div class="navbar-col navbar-title">
+        <a href="/">{{ .Site.Title }}</a>
+    </div>
+    <div class="navbar-col navbar-nav">
+    <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li class="nav-item"><a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+        {{ end }}
+    </ul>
     </div>
 </nav>

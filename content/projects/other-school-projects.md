@@ -65,14 +65,14 @@ I'm hoping this catalog can help curious eyes get an idea of what goes into an E
 ###### EECS 482: Operating Systems
 * Projects written in C++
 * Concurrent thread program simulating accesses to different sectors of a disk
-* Userspace thread library with support for "multiple CPUs" (these were just implemented by the instructors as pthreads calling the clients of the library we wrote)
+* Userspace thread library with support for "multiple CPUs" (these were implemented by the instructors as pthreads calling the clients of the library we wrote). Implemented with `ucontext`. These userspace threads are commonly called fibers, where scheduling is done by the library, not the kernel. I wouldn't call these coroutines because scheduling was done by calls to the library's synchronization primitives (mutex, cv, thread_join), not with an explicit `await` syntax. There was no event loop either, only calls to `setcontext` and `swapcontext`.
 * A Virtual Memory Pager
 * A Shared Network File System ("shanty google drive") based on BSD TCP Sockets, inodes and directory + file locks.
 
 ###### EECS 489: Computer Networks
 * Projects written in C and C++ with BSD sockets as well as some Python scripts for automated testing with Mininet
 * Our own implementation of `iperf`, which measures throughput of a TCP connection between network nodes.
-* A CDN-like Forward HTTP Proxy that selects appropriate bitrate chunks of a video file requested by various clients
+* A CDN-like Forward HTTP Proxy that selects appropriate bitrate chunks of a video file requested by various clients. Concurrency implemented with a primitive event loop based on `select`.
 * A reliable file-transfer client and server using UDP to implement two sliding-window protocols, Cumulative Acknowledgement and Selective Acknowledgement
 * The logic of a basic, static router with a static routing table. Supported ARP, IP Packets and ICMP
 

@@ -27,3 +27,6 @@ Many have been saved by reading someone's encounter with the same esoteric and p
 
 ![xkcd comic](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png
 "CC BY-NC 2.5")
+
+### Site contents
+This site was made using Hugo, Bootstrap, and some of my own CSS styling. Here is the [source code](https://github.com/joebb97/joebb-website-source)
