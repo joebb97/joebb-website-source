@@ -65,7 +65,7 @@ I'm hoping this catalog can help curious eyes get an idea of what goes into an E
 ###### EECS 482: Operating Systems
 * Projects written in C++
 * Concurrent thread program simulating accesses to different sectors of a disk
-* Userspace thread library with support for "multiple CPUs" (these were implemented by the instructors as pthreads calling the clients of the library we wrote). Implemented with `ucontext`. These userspace threads are commonly called fibers, where scheduling is done by the library, not the kernel. I wouldn't call these coroutines because scheduling was done by calls to the library's synchronization primitives (mutex, cv, thread_join), not with an explicit `await` syntax. There was no event loop either, only calls to `setcontext` and `swapcontext`.
+* Userspace thread library with support for "multiple CPUs" (these were implemented by the instructors as pthreads calling the clients of the library we wrote). Implemented with `ucontext`. These userspace threads are commonly called [fibers](https://www.evanjones.ca/software/threading.html), where scheduling is done by the library upon calls to `mutex`, `cv`, and `yield` operations --- not the kernel. Some call these stackful coroutines, although definitions vary. I will write about these definitons and link to that here at some point. There was no event loop either, only calls to `setcontext` and `swapcontext`.
 * A Virtual Memory Pager
 * A Shared Network File System ("shanty google drive") based on BSD TCP Sockets, inodes and directory + file locks.
 
