@@ -9,13 +9,9 @@ body {
     line-height: 1.6;
     font-size: 1.125rem;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
-    max-width: 800px;
+    width: 760px;
+    max-width: calc(100% - 40px);
     margin: auto;
-}
-
-.container {
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .post-header {
@@ -45,7 +41,6 @@ ul li ul {
     grid-template-columns: 1fr 1fr;
     background-color: #ff9bb2;
     font-family: "Roboto"; 
-    padding: 10px 20px;
     align-items: center;
     margin: auto;
 }
@@ -67,16 +62,16 @@ ul li ul {
 
 .navbar-title {
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
 }
 
 .navbar-menu {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-left: auto;
-}
-
-.navbar-menu-item {
-    padding: 10px;
+    margin: 20px 0;
 }
 
 .homepage-grid {
@@ -117,6 +112,7 @@ ul li ul {
 .footer-contact {
     margin-left: auto;
     text-align: right;
+    line-height: 1.75;
 }
 
 hr {
@@ -126,10 +122,6 @@ hr {
 
 a {
     color: maroon;
-}
-
-a:link {
-    text-decoration: none
 }
 
 a:hover {
@@ -172,11 +164,7 @@ pre code[class*='language-'] span {
 
     .navbar-title {
         margin: auto;
-        padding-top: 10px;
-    }
-
-    .navbar-menu {
-        margin: auto;
+        margin-top: 20px;
     }
 
     .homepage-image {
