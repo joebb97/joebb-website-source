@@ -1,70 +1,140 @@
-/* Some basic styling, Bootstrap for everything else */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
 body {
     color: #444;
     background-color: LavenderBlush;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
     max-width: 800px;
     margin: auto;
 }
 
-h1.post-title {
-    font-weight: bold;
-    font-family: "Roboto";
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-ul.terms {
+.post-header {
+    text-align: center;
+}
+
+h1.post-title {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 2.5rem;
+    margin: 10px;
 }
 
 .content > h2 {
     font-size: 2rem;
-    margin-top: 2rem;
     font-weight: normal;
+    margin-bottom: 0;
 }
 
 ul li ul {
-    padding-bottom: 1rem;
+    padding-bottom: 20px;
 }
 
-.navbar {
+.navbar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #ff9bb2;
     font-family: "Roboto"; 
+    padding: 10px 20px;
+    align-items: center;
+    margin: auto;
 }
 
-/* Use bootstrap's medium devices breakpoint */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column!important;
-    }
-
-    .navbar-brand {
-        margin-right: 0px;
-    }
-}
-
-.navbar-brand {
-    color: black;
-    font-weight: bolder;
-}
-
-.nav-link {
+.navbar-link {
+    text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.0625rem;
+}
+
+
+.navbar-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.25rem;
+}
+
+.navbar-title {
+    margin-right: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.navbar-menu-item {
+    padding: 10px;
+}
+
+.homepage-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.homepage-content {
+    margin-left: 15px;
+}
+
+.thing {
+    margin-top: 0;
+}
+
+.homepage-image {
+    display: grid;
+    align-content: center;
+    justify-content: start;
+    max-width: 100%;
+}
+
+.homepage-welcome {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-grid {
+    display: flex;
+}
+
+.footer-author {
+}
+
+.footer-contact {
+    margin-left: auto;
+    text-align: right;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 
 a {
-    color: #88003e;
+    color: maroon;
+}
+
+a:link {
+    text-decoration: none
 }
 
 a:hover {
+    text-decoration: underline;
     color: #004188
-}
-
-.homepage-content > h1 {
-    text-align: center;
-    /* margin-bottom: 3px; */
 }
 
 code:not([class]) {
@@ -89,9 +159,35 @@ pre code[class*='language-'] span {
 }
 
 .highlight {
-    /* background-color: MistyRose !important; */
-    /* background-color: lightcyan !important; */
     margin-bottom: .75em;
-    /* padding: 15px; */
-    /* color: black !important; */
+}
+
+/* Use bootstrap's medium devices breakpoint */
+@media (max-width: 768px) {
+
+    .navbar-grid {
+        margin-bottom: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .navbar-title {
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .navbar-menu {
+        margin: auto;
+    }
+
+    .homepage-image {
+        margin: auto;
+    }
+
+    .homepage-content {
+        margin-left: 0;
+    }
+
+    .homepage-grid {
+        grid-template-columns: 1fr;
+    }
 }

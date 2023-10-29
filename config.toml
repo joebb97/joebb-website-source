@@ -8,32 +8,6 @@ enableRobotsTXT = true
   description = "Joey's Personal Website/Blog"
   gravatar = "joey@joeybuiteweg.com"
 
-[menu]
-
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 2
-
-  [[menu.main]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/projects/"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "music"
-    name = "Music"
-    url = "/music/"
-    weight = 4
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
-
 [taxonomies]
 category = "categories"
 
