@@ -1,13 +1,20 @@
-<nav class="navbar">
-    <div class="navbar-col navbar-title">
+<nav class="navbar-grid">
+    <div class="navbar-title">
         <a href="/">{{ .Site.Title }}</a>
     </div>
-    <div class="navbar-col navbar-nav">
-    <ul>
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <li class="nav-item"><a class="nav-link" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
-        {{ end }}
-    </ul>
+    <div class="navbar-menu">
+        <div class="navbar-menu-item">
+            <a class="navbar-link" href="/blog/" title="">Blog</a>
+        </div>
+        <div class="navbar-menu-item">
+            <a class="navbar-link" href="/projects/" title="">Projects</a>
+        </div>
+        <div class="navbar-menu-item">
+            <a class="navbar-link" href="/music/" title="">Music</a>
+        </div>
+        <div class="navbar-menu-item">
+            <a class="navbar-link" href="/contact/" title="">Contact</a>
+        </div>
     </div>
+
 </nav>
