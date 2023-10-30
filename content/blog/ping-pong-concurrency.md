@@ -72,7 +72,7 @@ If `theChannel` was buffered with a size of one, the call to put a value into th
 
 Running the example we see the desired output.
 
-```bash {linenos=inline}
+```bash {linenos=table}
 $ go run main.go
 ping
 pong
