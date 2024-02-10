@@ -2,7 +2,7 @@
 <div class="homepage-grid">
     <div class="homepage-image">
         {{ $image := resources.Get "images/me.jpg" }}
-        {{ $image := $image.Fit "600x600"}}
+        {{ $image := $image.Crop "600x600"}}
         <img class="homepage-image" src="{{ $image.RelPermalink }}" alt="A picture of Joey"></img>
     </div>
     <div class="homepage-content">
