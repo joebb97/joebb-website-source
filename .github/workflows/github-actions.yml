@@ -17,4 +17,6 @@ jobs:
           ls ${{ github.workspace }}
       - name: Hyperlink link checker
         uses: untitaker/hyperlink@0.1.32
+        with:
+          args: public/ --sources content/
       - run: echo "🍏 This job's status is ${{ job.status }}."
