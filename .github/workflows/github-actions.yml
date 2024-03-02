@@ -19,6 +19,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+      - name: Run Hugo build
         run: hugo --minify
       - name: Hyperlink link checker
         uses: untitaker/hyperlink@0.1.32
