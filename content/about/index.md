@@ -16,18 +16,23 @@ Any success I have can be attributed to my stable upbringing, two wonderful and 
 It makes me happy to see the progress that society is making toward both equality and equity. We are being vocal about what we know is wrong; let's hope it will lead to serious change.
 
 # My Interests
+
 ## Technology
+
 I love Computers and all facets of them. They are fascinating and can meaningfully improve people's lives.
 
 ## Music
+
 Theory, production, classical, hip-hop, jazz, piano, saxophone.
 
 I was a member of the Tenor Saxophone section in the Michigan Marching Band for four years. More info on my [LinkedIN](https://www.linkedin.com/in/joebb/details/organizations/).
 
 ## Empathy
+
 Volunteering, outreach, social change, compassion, teaching, DEI improvement, and climate improvement at school and at work.
 
 ## Activity
+
 Band, basketball, frisbee, lifting, friends, watching sports (especially Umich!), video games.
 
 # My Values
@@ -37,6 +42,7 @@ Band, basketball, frisbee, lifting, friends, watching sports (especially Umich!)
 ## Humor
 
 One of my favorite Computer Scientists is [James Mickens](https://mickens.seas.harvard.edu/wisdom-james-mickens). His comedic essays and conference talks are hysterical, must-see content. He says in [his Reddit AMA](https://www.reddit.com/r/IAmA/comments/2syfmu/happy_mlk_day_iama_black_computer_scientist_who/?sort=top),
+
 > "My attitude in life is that, unless you’re directly helping to end war, poverty, and homelessness at the same time, you don’t have the right to be ultra-serious."
 
 I share this attitude. We technologists overrate our importance and efficacy. Lots of software actively hampers the people it's trying to help, to the point that they don't expect it to work. This [talk by Jonathan Blow](https://youtu.be/ZSRHeXYDLko?t=1323) gives good examples. Let's get it right instead of lying to ourselves about how good or smart we are!

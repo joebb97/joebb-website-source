@@ -2,7 +2,8 @@
 title: Joey Buiteweg
 ---
 
-# Welcome! 
+# Welcome!
+
 ---
 
 My name is Joseph Buiteweg (pronounced _byu-te-weg_), but I go by Joey. I'm a Software Engineer and Musician from Ann Arbor, Michigan; living in Austin, Texas; and I am passionate about **systems software** and **security**.

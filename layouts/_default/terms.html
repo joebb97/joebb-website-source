@@ -1,16 +1,14 @@
 {{ define "main" }}
-
-    <h1 class="post-title mt-4 text-center">{{ i18n .Title }}</h1>
-    <hr>
-    <ul class="terms">
-        {{ range $key, $value := .Data.Terms }}
-        <li>
-            <a href="{{ (print $.Data.Plural "/" (lower $key)) | relURL }}">
-            {{ $key }}
-            </a>
-            ({{ len $value }})
-        </li>
-        {{ end }}
-    </ul>
-
+  <h1 class="post-title mt-4 text-center">{{ i18n .Title }}</h1>
+  <hr />
+  <ul class="terms">
+    {{ range $key, $value := .Data.Terms }}
+      <li>
+        <a href="{{ (print $.Data.Plural "/" (lower $key)) | relURL }}">
+          {{ $key }}
+        </a>
+        ({{ len $value }})
+      </li>
+    {{ end }}
+  </ul>
 {{ end }}

@@ -6,13 +6,17 @@ categories: ["music"]
 ---
 
 # Audio Interface
+
 Scarlett 2i4
 
 # Monitors
-Rokit KRK 4 
+
+Rokit KRK 4
 
 # DAW
+
 Ableton
 
 # Microphone
+
 Shure SM58

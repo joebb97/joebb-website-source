@@ -356,6 +356,7 @@ This differs from Golang's channels and Python's thread-safe queue, which are bo
 These concurrency primitives are much more flexible than Rust's, since many threads can take values out of the channel. It seems there are no plans to have a natively supported mpmc channel in Rust, at least based on this [GitHub issue](https://github.com/rust-lang/rfcs/issues/848).
 
 To work around these limitations, we use two channels for each thread to send messages to the other. Here is the code.
+
 ```rust {linenos=table}
 // src/main.rs
 use std::sync::mpsc::{Sender, Receiver};

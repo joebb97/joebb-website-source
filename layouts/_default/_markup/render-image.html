@@ -1,4 +1,8 @@
 <figure class="md-image text-center">
-    <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" class="figure-img img-fluid"/>
-    <figcaption>{{ .Title }}</figcaption>
+  <img
+    src="{{ .Destination | safeURL }}"
+    alt="{{ .Text }}"
+    class="figure-img img-fluid"
+  />
+  <figcaption>{{ .Title }}</figcaption>
 </figure>

@@ -1,22 +1,33 @@
 <!-- Basic stuff -->
-<meta charset="utf-8">
-<meta name="HandheldFriendly" content="True">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer-when-downgrade">
+<meta charset="utf-8" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
 <title>{{ .Title }}</title>
-<meta name="description" content="{{ .Site.Params.Description }}">
+<meta name="description" content="{{ .Site.Params.Description }}" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "rss/" | relURL }}">
+<!-- <link -->
+<!--   rel="alternate" -->
+<!--   type="application/rss+xml" -->
+<!--   title="RSS" -->
+<!--   href="{{ "rss/" | relURL }}" -->
+<!-- /> -->
 
-<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
-<link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | relURL }}">
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}" />
+<link rel="apple-touch-icon-precomposed" href="{{ "favicon.png" | relURL }}" />
 {{ with resources.Get "css/style.css" | resources.Minify }}
-<link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
+  <link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
 {{ end }}
 {{ with resources.Get "fonts/roboto.woff2" }}
-<link rel="preload" as="font" href="{{ .RelPermalink }}" type="font/woff2" crossorigin="anonymous">
+  <link
+    rel="preload"
+    as="font"
+    href="{{ .RelPermalink }}"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
 {{ end }}
 {{ with resources.Get "css/roboto.css" | resources.Minify }}
-<link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
+  <link rel="stylesheet" href="{{ .RelPermalink }}?rnd={{ now.Unix }}" />
 {{ end }}

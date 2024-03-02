@@ -1,36 +1,38 @@
 {{ define "main" }}
-<main>
+  <main>
     <article>
-        <header>
-            <h1 class="post-title">{{ .Title }}</h1>
-            <hr>
-        </header>
-        <!-- NOTE: This only takes the content of _index.md, not the articles -->
-        <div class="content">
-            {{.Content}}
-        </div>
+      <header>
+        <h1 class="post-title">{{ .Title }}</h1>
+        <hr />
+      </header>
+      <!-- NOTE: This only takes the content of _index.md, not the articles -->
+      <div class="content">
+        {{ .Content }}
+      </div>
     </article>
     <ul>
-        {{ range .Pages }}
+      {{ range .Pages }}
         <li class="mb-2">
-            <a href="{{ .Permalink | relURL }}">{{.Title}}</a>
-            <div class="article-info">
-                {{ if .Params.date }}
-                <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
-                {{ end }}
-                <div class="article-taxonomies">
-                    {{ if .Params.categories }}
-                    <span class="article-categories">
-                        Categories:
-                        {{ range .Params.categories }}
-                        <a href="{{ " categories/" | relURL }}{{ . }}">{{ . }}</a>
-                        {{ end }}
-                    </span>
-                    {{ end }}
-                </div>
+          <a href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+          <div class="article-info">
+            {{ if .Params.date }}
+              <div class="article-date">
+                {{ .Params.date.Format "2006-01-02" }}
+              </div>
+            {{ end }}
+            <div class="article-taxonomies">
+              {{ if .Params.categories }}
+                <span class="article-categories">
+                  Categories:
+                  {{ range .Params.categories }}
+                    <a href="{{ "categories/" | relURL }}{{ . }}">{{ . }}</a>
+                  {{ end }}
+                </span>
+              {{ end }}
             </div>
+          </div>
         </li>
-        {{ end }}
+      {{ end }}
     </ul>
-</main>
+  </main>
 {{ end }}

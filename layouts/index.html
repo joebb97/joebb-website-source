@@ -1,31 +1,48 @@
 {{ define "main" }}
-<div class="homepage-grid">
+  <div class="homepage-grid">
     <div class="homepage-image">
-        {{ $image := resources.Get "images/me.jpg" }}
-        {{ $image := $image.Crop "600x600"}}
-        <img class="homepage-image" src="{{ $image.RelPermalink }}" alt="A picture of Joey"></img>
+      {{ $image := resources.Get "images/me.jpg" }}
+      {{ $image := $image.Crop "600x600" }}
+      <img
+        class="homepage-image"
+        src="{{ $image.RelPermalink }}"
+        alt="A picture of Joey"
+      />
     </div>
     <div class="homepage-content">
-        <h1 class="homepage-welcome">Welcome!</h1><hr>
-        <div class="homepage-description">
+      <h1 class="homepage-welcome">Welcome!</h1>
+      <hr />
+      <div class="homepage-description">
         <p>
-            My name is Joseph Buiteweg (pronounced <em>byu-te-weg</em>), but I go by Joey. I’m a Software Engineer and Musician from Ann Arbor, Michigan; living in Austin, Texas; and I am passionate about <strong>systems software</strong> and <strong>security</strong>.
+          My name is Joseph Buiteweg (pronounced <em>byu-te-weg</em>), but I go
+          by Joey. I’m a Software Engineer and Musician from Ann Arbor,
+          Michigan; living in Austin, Texas; and I am passionate about
+          <strong>systems software</strong> and <strong>security</strong>.
         </p>
         <p>
-            I developed these passions while completing a Bachelor’s in Computer Engineering and Master’s in Computer Science from the University of Michigan.
+          I developed these passions while completing a Bachelor’s in Computer
+          Engineering and Master’s in Computer Science from the University of
+          Michigan.
         </p>
-        </div>
+      </div>
     </div>
-</div>
-<div class="content">
-<p class="thing">
-    My main technological interests lie in any of the intersections of Computer Security, Embedded Systems, Web Systems, Distributed Systems, and Networking.
-<p>
-<p>
-    In my spare time I enjoy producing music, playing the Saxophone and Piano, and staying healthy through strength training and playing Ultimate Frisbee. I also enjoy watching sports, especially Michigan Football, and playing video games.
-<p>
-<p>
-    Thanks for visiting! Hope you find the content here useful.
-</p>
-</div>
+  </div>
+  <div class="content">
+    <p class="thing">
+      My main technological interests lie in any of the intersections of
+      Computer Security, Embedded Systems, Web Systems, Distributed Systems, and
+      Networking.
+    </p>
+
+    <p></p>
+    <p>
+      In my spare time I enjoy producing music, playing the Saxophone and Piano,
+      and staying healthy through strength training and playing Ultimate
+      Frisbee. I also enjoy watching sports, especially Michigan Football, and
+      playing video games.
+    </p>
+
+    <p></p>
+    <p>Thanks for visiting! Hope you find the content here useful.</p>
+  </div>
 {{ end }}

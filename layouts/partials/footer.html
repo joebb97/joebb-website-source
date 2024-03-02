@@ -1,11 +1,14 @@
-<hr></hr>
+<hr />
 <div class="footer-grid">
-    <div class="footer-author">
-        © {{ if isset .Site.Params "author"}}{{ .Site.Params.author }}, {{end}}{{ now.Year }}
-    </div>
-    <div class="footer-contact">
-        <a href="{{ "/contact/" | relURL }}">Contact</a>
-        <br>
-        <a href="{{ "/extra/misc/" | relURL }}">About this site</a>
-    </div>
+  <div class="footer-author">
+    ©
+    {{ if isset .Site.Params "author" }}
+      {{ .Site.Params.author }},
+    {{ end }}{{ now.Year }}
+  </div>
+  <div class="footer-contact">
+    <a href="{{ "/contact/" | relURL }}">Contact</a>
+    <br />
+    <a href="{{ "/extra/misc/" | relURL }}">About this site</a>
+  </div>
 </div>

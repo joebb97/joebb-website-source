@@ -7,6 +7,7 @@ author: Joey Buiteweg
 ---
 
 ## Positive Numbers
+
 If you're in the market for converting from python2 to python3, be aware that there's some fundamental differences in default division of integers. Also beware that these differences won't be automagically resolved by the tool [2to3](https://docs.python.org/3/library/2to3.html).
 
 ```python3
@@ -30,14 +31,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 As you can see, the `/` operator in python3 leads to floating point divison by default, which can lead to problems if you're doing something like calculating memory page indices!
+
 ```python
 index = addr / self.PAGE_SIZE
 ```
 
 To access the integer division behavior in python3, you'll need to use the `//` operator. The code above becomes
+
 ```python
 index = addr // self.PAGE_SIZE
 ```
+
 ```python3
 $ python3
 Python 3.8.5 (default, Jul 21 2020, 10:42:08)
@@ -51,6 +55,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ## Negative Numbers
 
 Things get even more interesting when dealing with negative numbers and rounding.
+
 ```python
 $ python
 Python 2.7.16 (default, Jan 27 2020, 04:46:15)
@@ -102,6 +107,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ## Compared to C++
 
 Integer division truncation with negative numbers is different in C++, unfortunately.
+
 ```python
 $ python
 Python 2.7.16 (default, Jan 27 2020, 04:46:15)

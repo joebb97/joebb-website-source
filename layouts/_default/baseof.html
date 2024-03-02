@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
-<head>
+  <head>
     {{ block "head" . }}
-        {{ partial "head.html" . }}
+      {{ partial "head.html" . }}
     {{ end }}
-</head>
-<body>
+  </head>
+  <body>
     <header class="site-header">
-        {{ block "header" . }}
-            {{ partial "header.html" . }}
-        {{ end }}
+      {{ block "header" . }}
+        {{ partial "header.html" . }}
+      {{ end }}
     </header>
     <main>
-        {{ block "main" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
     </main>
     <footer>
-        {{ block "footer" . }}
-            {{ partial "footer.html" . }}
-        {{ end }}
+      {{ block "footer" . }}
+        {{ partial "footer.html" . }}
+      {{ end }}
     </footer>
-</body>
+  </body>
 </html>

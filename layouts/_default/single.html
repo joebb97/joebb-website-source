@@ -1,13 +1,13 @@
 {{ define "main" }}
-<article class="post">
+  <article class="post">
     <header class="post-header">
-        <h1 class="post-title">{{ .Title }}</h1>
-        {{ partial "articleInfo.html" . }}
-        <hr>
+      <h1 class="post-title">{{ .Title }}</h1>
+      {{ partial "articleInfo.html" . }}
+      <hr />
     </header>
     {{ partial "toc.html" . }}
     <div class="content">
-        {{ .Content }}
+      {{ .Content }}
     </div>
-</article>
+  </article>
 {{ end }}

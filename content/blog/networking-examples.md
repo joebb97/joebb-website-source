@@ -11,7 +11,6 @@ author: Joey Buiteweg
 
 I wanted to be more comfortable and competent with the provided networking libraries in Rust and Golang. I figured implementing some simple client/server applications would be a great way to do this.
 
-
 # The Applications
 
 ## Echo Server
@@ -55,6 +54,7 @@ The command line flags can also be used to specify alternative hostnames/IP addr
 For brevity, I'll showcase the key TCP and UDP client/server code for the Go implementation. Feel free to check out the UDP implementations in both languages.
 
 Here's the TCP Server connection handling code,
+
 ```go
 // TCP Server Handling Connection
 func handleConnection(conn net.Conn, bufSize uint) {
@@ -76,7 +76,9 @@ func handleConnection(conn net.Conn, bufSize uint) {
 	}
 }
 ```
+
 And the UDP server connection handling code,
+
 ```go
 func handleConnectionUDP(conn *net.UDPConn, bufSize uint) {
 	buf := make([]byte, bufSize)
@@ -98,6 +100,7 @@ func handleConnectionUDP(conn *net.UDPConn, bufSize uint) {
 ```
 
 And finally the TCP and UDP Client connection handling code.
+
 ```go
 // TCP and UDP Client Connection Code
 func runClient(flags *Flags) error {
@@ -157,7 +160,7 @@ The `-b` parameter specifies the underlying buffer size to use when storing/send
 
 This is much larger than it should be and is probably necessary due to some ineffeciency that I don't really care to investigate. I'll be interested to see if the same behavior surfaces in the Rust implementation I'm planning on making.
 
-The command line flags support the same functionality as the Echo Server/Client, as well as specifying how long the client should send for (with the `-t` flag). 
+The command line flags support the same functionality as the Echo Server/Client, as well as specifying how long the client should send for (with the `-t` flag).
 
 I'll again showcase the key pieces of code for the server and client.
 
@@ -208,6 +211,7 @@ func handleConnection(conn net.Conn, bufSize uint, protoStr string) {
 ```
 
 And here is the client code
+
 ```go
 // TCP/UDP Client Connection Handling
 func runClient(flags *Flags) error {
@@ -262,7 +266,6 @@ func runClient(flags *Flags) error {
 As the TODO in the client code notes, the connection closing for UDP isn't failure proof and could certainly be improved for more reliability. If the last UDP packet sent by the client for closing the connection gets lost, the server will think the connection is still open! Definitely a problematic situation.
 
 Handling this situation would require implementing a TCP-like connection termination process which I don't have the desire to write myself.
-
 
 ## Conclusion
 

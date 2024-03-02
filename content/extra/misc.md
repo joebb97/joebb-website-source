@@ -25,8 +25,8 @@ I was not born knowing what I know; other people have helped me get to where I a
 
 Many have been saved by reading someone's encounter with the same esoteric and pain-staking problem they're tackling. StackOverflow, various StackExchange sites, people's blogs, spec-sheets, and user documentation are all crucial to the landscape of learning software. My dream is for someone to randomly stumble across one of my posts via search engine, get use from it, and then go about their day one step closer to solving their problem.
 
-![xkcd comic](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png
-"CC BY-NC 2.5")
+![xkcd comic](https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png "CC BY-NC 2.5")
 
 ### Site contents
+
 This site was made using Hugo, Bootstrap, and some of my own CSS styling. Here is the [source code](https://github.com/joebb97/joebb-website-source)

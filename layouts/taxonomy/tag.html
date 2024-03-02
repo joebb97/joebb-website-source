@@ -1,25 +1,24 @@
 {{ define "main" }}
-
-    <h1>{{ i18n "tag" | humanize }}: {{ .Title }}</h1>
-    <div class="article-info">
-        <a href="{{ "tags/" | relURL }}">{{ i18n "toAllTags" | humanize}}</a>
-    </div>
-    {{ range .Data.Pages }}
+  <h1>{{ i18n "tag" | humanize }}: {{ .Title }}</h1>
+  <div class="article-info">
+    <a href="{{ "tags/" | relURL }}">{{ i18n "toAllTags" | humanize }}</a>
+  </div>
+  {{ range .Data.Pages }}
     <article class="post-list">
-        <header> 
-            <h1>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h1>
-        </header>
-        <div class="content">
-            {{ .Summary }}
-        </div>
-        <div class="article-info">
-            {{ if .Params.date }}
-                <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
-            {{ end }}
-        </div>
+      <header>
+        <h1>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h1>
+      </header>
+      <div class="content">
+        {{ .Summary }}
+      </div>
+      <div class="article-info">
+        {{ if .Params.date }}
+          <div class="article-date">{{ .Params.date.Format "2006-01-02" }}</div>
+        {{ end }}
+      </div>
     </article>
-    {{ end }}
+  {{ end }}
 
 {{ end }}
