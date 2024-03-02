@@ -15,6 +15,11 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+        run: hugo --minify
       - name: Hyperlink link checker
         uses: untitaker/hyperlink@0.1.32
         with:
