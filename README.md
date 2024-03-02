@@ -14,7 +14,9 @@ This here is the code for my personal website. My goals were:
 - Responsive CSS (looks good on Mobile), while needing to write minimal amount of @media-queries
 - Not just using a theme somebody else wrote. Because I need to be a special snowflake.
 
-Which is why I chose [Hugo](https://gohugo.io/) and [Bootstrap](https://getbootstrap.com/). Hugo's docs and learning resources could use some work, but it has an active community and some good tutorials out there. Bootstrap is amazing, I've used it before. It saves me loads of time.
+Which is why I chose [Hugo](https://gohugo.io/). Hugo's docs and learning resources could use some work, but it has an active community and some good tutorials out there.
+
+This site used to use Bootstrap, but I switched to using CSS grid layout to avoid loading a third-party CSS library I didn't understand. It was pretty arduous, but I'm happy with the result.
 
 I probably could've saved myself a few weekends and evenings of time using Wordpress, SquareSpace, Wix, or Drupal, but that's like, TOO MAINSTREAM MAN.
 
