@@ -20,7 +20,7 @@
       <span class="article-categories">
         Categories:
         {{ range .Params.categories }}
-          <a href="{{ " categories/" | relURL }}{{ . }}">{{ . }}</a>
+          <a href="{{ "categories/" | relURL }}{{ . }}">{{ . }}</a>
         {{ end }}
       </span>
     {{ end }}
