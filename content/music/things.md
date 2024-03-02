@@ -1,7 +1,6 @@
 ---
 title: My Gear
 date: 9/20/2020
-draft: true
 categories: ["music"]
 ---
 
