@@ -19,4 +19,6 @@ I also made some grammatical updates to the articles.
 
 All of this is visible in the site's [source code](https://github.com/joebb97/joebb-website-source) and git history.
 
+My [lighthouse score](https://pagespeed.web.dev/analysis/https-joeybuiteweg-com/i39zf24dxy?form_factor=mobile) is now pretty darn good
+
 Feel free to check it out and take inspiration from what you see!
