@@ -1,8 +1,9 @@
 ---
-title: "Use shellcheck!"
+title: Use shellcheck!
 date: 2021-10-12
 draft: false
-categories: [shell]
+categories:
+  - shell
 author: Joey Buiteweg
 ---
 
@@ -12,7 +13,7 @@ I say shell scripts instead of `bash` scripts since you should typically avoid u
 
 - Includes functionality that isn't [POSIX](https://en.wikipedia.org/wiki/POSIX) compliant, which risks portability.
 - Is slower than `dash`, which is POSIX compliant and includes no extra features.
-- Has idiosyncracies, typically called bash-isms, that manage to creep their way into regular shellscripts
+- Has idiosyncrasies, typically called bash-isms, that manage to creep their way into regular shell scripts
 
 The above reasons are why you should put `#!/bin/sh` at the top of your scripts, and not `#!/bin/bash`. On Debian systems `/bin/sh` is symlinked to `/bin/dash` so that your scripts run as fast as possible. On other distros it might be linked to something else, but I highly recommend linking it to `dash`.
 
@@ -20,7 +21,7 @@ _Note: `/bin/sh` being linked to another shell is entirely different from your l
 
 Anyway. `shellcheck` helps you write POSIX compliant scripts, or will let you specify `#!/bin/bash` and use all the bash-isms you want. It also has detailed descriptions and justifications of its warnings on [their wiki](https://github.com/koalaman/shellcheck/wiki/Checks)
 
-Writing shell scripts comes with a lot of footguns. `shellcheck` can help remove some of these, provided you heed its warnings!
+Writing shell scripts comes with a lot of foot-guns. `shellcheck` can help remove some of these, provided you heed its warnings!
 
 ```
  _________________

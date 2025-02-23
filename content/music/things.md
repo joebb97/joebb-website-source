@@ -1,16 +1,17 @@
 ---
 title: My Gear
-date: 9/20/2020
+date: 2020-09-20
+lastUpdated: 2025-01-18
 categories: ["music"]
 ---
 
 # Audio Interface
 
-Scarlett 2i4
+Behringer UMC202HD
 
 # Monitors
 
-Rokit KRK 4
+KRK Rokit 5 (RP5G3W)
 
 # DAW
 

@@ -1,8 +1,10 @@
 ---
 title: "Exercism: A Community-Driven Alternative to Leetcode"
 date: 2021-01-30
+lastUpdated: 2025-01-18
 draft: false
-categories: [interviewing]
+categories:
+  - interviewing
 author: Joey Buiteweg
 ---
 
@@ -10,13 +12,13 @@ author: Joey Buiteweg
 
 Anyone who has interviewed for a software engineering position has no doubt spent some time practicing "whiteboard questions".
 
-Whiteboard questions are normally datastructures and algorithms-oriented programming questions meant to assess technical competency. I personally think such questions fall short in evaluating the effectiveness of an engineer, but they are still prevalent nonetheless.
+Whiteboard questions are normally data structures and algorithms-oriented programming questions meant to assess technical competency. Such questions fall short in evaluating the effectiveness of an engineer, but remain prevalent.
 
-Whether or not the interviewing company does these types of technical questions depends on the company. Facebook, Amazon, Apple, Netflix and Google (colloquially known as "FAANG") all ask these kinds of questions in their interviews.
+Who asks these questions in an interview depends on the company. Facebook, Amazon, Apple, Netflix and Google (a.k.a. "FAANG") all do.
 
-[Leetcode](https://leetcode.com/), cringy name and all, is a popular site for practicing such whiteboard questions. You work on example problems and submit them, after which your solution is evaluated for performance and correctness.
+[Leetcode](https://leetcode.com/), cringe name and all, is a popular site for practicing such whiteboard questions. You work on example problems and submit them, after which your solution is evaluated for performance and correctness.
 
-In my opinion, Leetcode falls short from its lack of potential feedback from an actual human being. Interviewers place strong perference on code readability and being able to understand your solution as you make it. **Leetcode absolutely does not ensure either of these!**
+In my opinion, Leetcode falls short because it lacks potential feedback from an actual human being. Interviewers place strong preference on code readability and being able to understand your solution as you make it. **Leetcode absolutely does not ensure either of these!**
 
 ## Exercism
 
