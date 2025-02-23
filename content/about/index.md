@@ -15,6 +15,10 @@ Any success I have can be attributed to my stable upbringing, two wonderful and 
 
 It makes me happy to see the progress that society is making toward both equality and equity. We are being vocal about what we know is wrong; let's hope it will lead to serious change.
 
+# My Struggles
+
+See [my mental health journey]({{< ref "/extra/my-mental-health-journey/" >}}).
+
 # My Interests
 
 ## Technology

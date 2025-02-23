@@ -29,4 +29,4 @@ Many have been saved by reading someone's encounter with the same esoteric and p
 
 ### Site contents
 
-This site was made using Hugo, Bootstrap, and some of my own CSS styling. Here is the [source code](https://github.com/joebb97/joebb-website-source)
+This site was made using Hugo, and my own CSS styling. Here is the [source code](https://github.com/joebb97/joebb-website-source)

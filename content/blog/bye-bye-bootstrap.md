@@ -15,6 +15,8 @@ I turned on some minifying and image features too.
 
 I also migrated from GitHub pages to Cloudflare Pages.
 
-All of this is visible in the site's [source code](https://github.com/joebb97/joebb-website-source)
+I also made some grammatical updates to the articles.
+
+All of this is visible in the site's [source code](https://github.com/joebb97/joebb-website-source) and git history.
 
 Feel free to check it out and take inspiration from what you see!
