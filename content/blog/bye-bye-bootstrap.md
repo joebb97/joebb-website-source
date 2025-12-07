@@ -1,6 +1,7 @@
 ---
 title: "Bye Bye Bootstrap"
 date: 2025-02-23T12:51:44-06:00
+lastUpdated: 2025-12-07
 draft: false
 author: Joey Buiteweg
 ---
@@ -16,6 +17,8 @@ I turned on some minifying and image features too.
 I also migrated from GitHub pages to Cloudflare Pages.
 
 I also made some grammatical updates to the articles.
+
+I also moved an article from 2023 about [my mental health journey]({{< ref "/extra/my-mental-health-journey" >}}) off the main blog tab.
 
 All of this is visible in the site's [source code](https://github.com/joebb97/joebb-website-source) and git history.
 
