@@ -20,3 +20,7 @@ category = "categories"
 [markup]
     [markup.highlight]
     style = "dracula"
+
+    [markup.tableOfContents]
+      startLevel = 1
+      endLevel = 6
