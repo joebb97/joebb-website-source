@@ -17,7 +17,7 @@ It makes me happy to see the progress that society is making toward both equalit
 
 # My Struggles
 
-See [my mental health journey]({{< ref "/extra/my-mental-health-journey/" >}}).
+See [my mental health journey]({{< ref "/extra/my-mental-health-journey" >}}).
 
 # My Interests
 

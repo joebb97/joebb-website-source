@@ -2,6 +2,7 @@
 title: "Bye Bye Bootstrap"
 date: 2025-02-23T12:51:44-06:00
 draft: false
+categories: [css, hugo, web]
 author: Joey Buiteweg
 ---
 

@@ -19,6 +19,15 @@ I'm hoping this catalog can help curious eyes get an idea of what goes into an E
 - Labs for learning the basics of AC and DC analog circuits using oscilloscopes, function generators, and breadboards.
 - Matlab and LTSpice for homework assignments. Math used includes calculus, complex numbers, and mild linear algebra.
 
+###### EECS 216: Signals and Systems
+
+- Intermediate circuits course. Topics included:
+	- Closed and open loop control systems
+	- Time and frequency domains of signals
+	- Filters
+	- Amplitude and Frequency modulation
+- Code written in Matlab for labs and homework assignments
+
 ###### EECS 270: Intro to Digital Logic Design
 
 - All labs/projects completed in Verilog flashed onto an FPGA SoC with Switches, Push Buttons, and Hex Displays
