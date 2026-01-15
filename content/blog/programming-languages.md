@@ -181,9 +181,9 @@ Concurrency Models help us do more while waiting on I/O.
 
 OS Threads combined with Synchronous I/O have more overhead, but are easier to program.
 
-Async I/O and Green Threads have less overhead, but are harder to program. Making an async runtime is hard. Go and Rust have both done the hard work themselves, but Rust async is harder to program than Go.
+Async I/O and Green Threads have less overhead, but are harder to program. Making an async runtime is hard. Go and Rust have both done the hard work themselves, but async Rust is harder to program than Go.
 
-Rust async compiler errors are harder to read. The types and function signatures are more complicated. That will get better, but there’s rough edges in 2025. As an aside, it looks like there’s finally a [section](https://doc.rust-lang.org/book/ch17-00-async-await.html) in “The Rust Programming Language” book about `async` and the language types it relies on. This was not the case for a number of years after `async` was added to the language.
+async Rust compiler errors are harder to read. The types and function signatures are more complicated. That will get better, but there’s rough edges in 2025. As an aside, it looks like there’s finally a [section](https://doc.rust-lang.org/book/ch17-00-async-await.html) in “The Rust Programming Language” book about `async` and the language types it relies on. This was not the case for a number of years after `async` was added to the language.
 
 Go programs have async for free. The run-time lets you see I/O as I/O, async or sync is abstracted away.
 
@@ -219,7 +219,7 @@ A language’s popularity affects the availability of libraries. If less people 
 
 For example, at the time of writing, this is the most popular [QUIC library](https://github.com/shiguredo/quic-server-zig) in Zig, but states that it’s experimental and not for production use . Guess you’ll be forking this or writing your own implementation of QUIC in Zig! Conversely, [quic-go](https://github.com/quic-go/quic-go) looks ready to Go (pun intended).
 
-Having libraries to do JSON de/serialization, base64 decoding, cryptography, network protocols, are vital to the success of a software project. The Go standard library is excellent. It has many useful libraries out of the box, and is my favorite part of the language.
+Having libraries to do JSON de/serialization, base64 decoding, cryptography, network protocols, are vital to the success of a software project. The Go standard library is excellent. It has many useful libraries out of the box and is my favorite part of the language.
 
 The language should handle UTF-8 strings sanely by default. Null terminated C-strings that have no awareness of UTF-8 are not suited for higher level applications in this millennium. Go and Rust both handle UTF-8 sanely by default.
 
