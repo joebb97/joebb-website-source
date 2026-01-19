@@ -1,12 +1,15 @@
 ---
 title: "Programming Languages"
 date: 2025-12-07
+lastUpdated: 2026-01-19
 draft: false
 toc: true
 categories: [rust, golang]
 author: Joey Buiteweg
 ---
-Mastery over a few languages helps progress careers faster. Switching your focus between many languages is like trying to hit a bullseye on a target that is constantly moving.
+Mastery of a few languages helps progress careers faster. Switching focus between many languages is like trying to hit a bullseye on a target that is constantly moving.
+
+I have been guilty of switching focus myself, as evidenced by my [sandbox repo](https://github.com/joebb97/sandbox). At one point in time I genuinely planned on doing projects in each of these languages. No longer.
 
 The following is a list of things to consider before deep diving into a new programming language. These factors lead companies to decide whether a programming language is worth their time or not. Outlining these considerations should show why Go and Rust have become popular recently.
 
@@ -294,8 +297,8 @@ At one point Rust was pursuing stackful coroutines (also called green threads) b
 
 Before you pick up another language, ask yourself, “Do I have extreme mastery of the languages I’m focused on?” Ask yourself about the considerations presented here.
 
-I enjoyed learning Haskell. Doing Advent of Code problems in Haskell was fun. If doing that keeps you from burning out, that’s great.
+I enjoyed learning Haskell. Doing Advent of Code problems in Haskell was fun. If doing that keeps you from burning out, that’s great. Learning the basics of a Functional Language is a good thing. It’s why Rust borrows good things from them like heavy support for combinators!
 
-But trying to master it is not useful for the avenues I’m trying to pursue in my career.
+But trying to master Haskell is not useful for the goals I’m trying to pursue in my career. Learning about Lenses and Folds is not going to help me in my pursuits of systems software, security, and networking.
 
-Learn new languages for fun if you want, but don’t expect your company to switch to them any time soon if they don’t satisfy the considerations mentioned here. If you’re not writing code in a language you want, look at switching companies if feasible.
+Learn new languages for fun if you want. If you’re not writing code in a language you want, look at switching companies if feasible.
