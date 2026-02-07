@@ -1,6 +1,6 @@
 ---
 title: The Shortcomings of IPv6 at Home
-date: 2025-02-23
+date: 2025-01-04
 draft: false
 toc: true
 categories: [networking]
