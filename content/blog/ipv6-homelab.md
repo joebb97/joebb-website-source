@@ -41,9 +41,9 @@ Let’s say you want to run your own forwarding DNS Resolver that does Ad blocki
 
 In order to have your devices leverage this Ad blocking, they need to send their DNS queries to this Resolver. To do so, they need the Resolver’s IP Address.
 
-An IPv4 LAN at home will almost always have a set of Private Addresses, which are NAT’d to a single Public IPv4 Address for the WAN. 1.1.1.1 is an example of a Public IPv4. At home, you get a single Public IP, offered via DHCP, for your WAN connection from your ISP, which is subject to change.
+An IPv4 LAN at home will almost always have a set of Private Addresses, which are NAT’d to a single Public IPv4 Address for the WAN. At home, you get a single Public IP, offered via DHCP, for your WAN connection from your ISP, which is subject to change.
 
-The IPv4 LAN Private IPs will not change even if your WAN’s Public IP changes. That is, if your GUA goes from 123.123.123.123 to 123.123.123.124 (assume those are globally routable), your addresses such as 10.88.0.1, 10.88.0.2, do not need to change.
+The IPv4 LAN Private IPs will not change even if your WAN’s Public IP changes. That is, if your WAN’s Public IP goes from 123.123.123.123 to 123.123.123.124 (assume those are globally routable), your addresses such as 10.88.0.1, 10.88.0.2, do not need to change.
 
 This makes it simple to choose an address for that Ad-blocking DNS Resolver. You can choose 10.88.0.2 for example, and it can stay that way until *you* decide to change it. Now your DHCP server can send that address as the LAN’s DNS Resolver and you’re good to go. Whether you assign 10.88.0.2 as a Static Address or a DHCP reservation is irrelevant here, what matters is that that address does not need to change.
 
@@ -53,7 +53,7 @@ IPv6 for homes whose ISPs provide it looks like this.
 
 Instead of a single Public IP offered via DHCP, you get an entire IPv6 Prefix delegated to your Network. This is called your Prefix Delegation (PD) and it’s given to your Router via DHCPv6.
 
-For example, your home has a Router. It asks the ISP’s Router for an IPv6 Prefix via DHCPv6, it gets back 2001:db8:beef::/56 . You can now divvy up your devices’ addresses from that Prefix. This should be done via SLAAC, which removes the need for the Router to keep track of which address which device is using, as is the case for DHCP. DHCPv6 on the LAN is an option, but should be avoided unless needed since SLAAC can do the same job with less broadcast traffic. Devices send Router Solicitations and Routers send Router Advertisements, similar to DHCP request and response.
+For example, your home has a Router. It asks the ISP’s Router for an IPv6 Prefix via DHCPv6, it gets back 2001:db8:beef::/56 (assume that is globally routable). You can now divvy up your devices’ addresses from that Prefix. This should be done via SLAAC, which removes the need for the Router to keep track of which address which device is using, as is the case for DHCP. DHCPv6 on the LAN is an option, but should be avoided unless needed since SLAAC can do the same job but faster. Devices send Router Solicitations and Routers send Router Advertisements, similar to DHCP request and response.
 
 Continuing the example, if we got a /56 from the ISP, we should split it up into /64s. The smallest prefix/subnet an IPv6 network should operate at is a /64. That’s per the standard. That is more addresses than most subnets will need, but it doesn’t matter because there are more than enough /64s to go around. SLAAC is meant to be used with a /64, but I’ve heard of it being used with /32s in the Data Center context. One /56 can be turned into 256 /64s, which we can use for different VLANs. I’ll cover this idea and VLANs in another blog post.
 
@@ -98,7 +98,7 @@ You’re supposed to pick ULAS far more randomly than the scheme in this example
 
 > The allocation of Global IDs is pseudo-random [RANDOM].  They MUST NOT be assigned sequentially or with well-known numbers. This is to ensure that there is not any relationship between allocations and to help clarify that these prefixes are not intended to be routed globally.  Specifically, these prefixes are not designed to aggregate.
 
-But there is no Internet police enforcing this. On your home network a few ULAs that have a predictable addressing scheme will not hurt anyone. If I end up being jailed by the IETF, you’ll know why lol.
+But there is no Internet police enforcing this. On your home network a few ULAs that have a predictable addressing scheme will not hurt anyone. If I end up being jailed by the IETF or ARIN, you’ll know why lol.
 
 Back to the example, the LAN has 2001:dead:beef:1::/64 and fce2:10:88:0::/64 assigned.
 
@@ -126,11 +126,11 @@ Contrast this to example before where the Resolver would have 2001:dead:beef:1:3
 
 # IPv6 NAT GUA to GUA
 
-A hack mentioned in [the forum post](https://forum.opnsense.org/index.php?topic=33902.0)) from before is to rent an IPv6 allocation from ARIN and then use a portion of it on your LAN instead of the ULAs.
+A hack mentioned in [the forum post](https://forum.opnsense.org/index.php?topic=33902.0) from before is to rent an IPv6 allocation from ARIN and then use a portion of it on your LAN instead of the ULAs. You cannot buy IP space. IP space is solely rentable.
 
 Let’s say we rented a /56 from ARIN, in reality you get much larger allocation but for this example that’s irrelevant. The /56 they gave us was 2001:db8:1234::/56 .
 
-In this scenario we would ensure that this not prefix is advertised over a BGP session to another router anywhere on the internet.
+In this scenario we would ensure that this prefix is not advertised over a BGP session to another router anywhere on the internet.
 
 Let’s say we got the same PD from our ISP before, 2001:dead:beef::/56 .
 
@@ -146,9 +146,9 @@ This scenario is doable but is expensive.
 
 In the US a lease from ARIN is at minimum $275 [a year](https://www.arin.net/resources/fees/fee_schedule/).
 
-My Google Fiber residential 1G plan is $70 a month. A business 1G plan is $100. I don’t know if the 1G plan comes with static IPs or not. The business 2G plan is $250 a month. An ARIN allocation is more expensive than all of those! Getting a Business Plan likely requires registering a business at your home address, which I would have to research how to do.
+My Google Fiber residential 1G plan is $70 a month. A business 1G plan is $100. I don’t know if the 1G plan comes with static IPs or not. The business 2G plan is $250 a month. An ARIN allocation is more expensive than all of those! But getting a Business Plan likely requires registering a business at your home address, which I would have to research how to do.
 
-The solution to this cost is to have more friends who have ARIN allocations who are willing to give you a portion theirs lol.
+The solution to this cost is to have more friends. Friends in particular that have ARIN allocations and are willing to give you a portion theirs lol.
 
 # DHCPv6 Tricks
 
