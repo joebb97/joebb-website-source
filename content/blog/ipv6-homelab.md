@@ -1,7 +1,7 @@
 ---
 title: The Shortcomings of IPv6 at Home
 date: 2025-02-23
-draft: true
+draft: false
 toc: true
 categories: [networking]
 author: Joey Buiteweg
