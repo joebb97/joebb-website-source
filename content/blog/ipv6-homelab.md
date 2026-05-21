@@ -19,7 +19,7 @@ Assuming your ISP supports IPv6, you’ve turned it on, and want to use it at ho
 
 IPv6 was intended to be used with Global Unicast Addresses (GUAs), where every address is globally routable. The IPv4 Internet used to be this way, until we ran out of addresses. Then we had to add NAT, which removed end-to-end connectivity.
 
-**IPv6 with GUAs biggest flaw is that without a stable prefix given to you from your ISP, you do not have stable addresses**. For devices that only connect out to the Internet, this is not a problem. But if you’re hosting services on your network that you want to reach both inside and outside the network, a non-stable address is harder to deal with.
+**IPv6 with GUAs' biggest flaw is that without a stable prefix given to you from your ISP, you do not have stable addresses**. For devices that only connect out to the Internet, this is not a problem. But if you’re hosting services on your network that you want to reach both inside and outside the network, a non-stable address is harder to deal with.
 
 # Terminology
 
@@ -102,27 +102,28 @@ But there is no Internet police enforcing this. On your home network a few ULAs 
 
 Back to the example, the LAN has 2001:dead:beef:1::/64 and fce2:10:88:0::/64 assigned.
 
-Now the Ad-blocking Resolver will get two IPv6 addresses on this LAN, both calculated using the EUI-64 algorithm discussed earlier. Again its MAC address is 32:33:34:35:36:37. These addresses will be 2001:dead:beef:1:3033:34ff:fe35:3637 and fce2:10:88:0:3033:34FF:FE35:3637
+Now the Ad-blocking Resolver will get two IPv6 addresses on this LAN, both calculated using the EUI-64 algorithm discussed earlier. Again, its MAC address is 32:33:34:35:36:37. These addresses will be 2001:dead:beef:1:3033:34ff:fe35:3637 and fce2:10:88:0:3033:34ff:fe35:3637
 
 Now the Router can use the fce2 address in its RDNSS advertisements without fear of it changing.
 
-To quote a colleague of mine who is a volunteer for ARIN, “I view any time that someone considers IPv6 ULAs a ‘good thing’ as a failure.” Which I agree with. Setting them up is cumbersome.
+To quote a colleague of mine who is a volunteer for ARIN, “I view any time that someone considers IPv6 ULAs a ‘good thing’ as a failure”, which I agree with. Setting them up is cumbersome.
 
 # IPv6 NAT ULAs to GUAs
 
 Here’s where things get even more spicy.
 
-You would think you could NAT IPv6 ULAs into GUAs using prefix translation, (NPTv6 is the common one), but doing that is actually pointless for dual-stack networks. Dual-stack means you have IPv4 and IPv6 set up, which is the most common way to deploy IPv6 today. More on dual-stack networks at the end.
+You would think you could NAT IPv6 ULAs into GUAs using prefix translation (NPTv6 is the common one), but doing that is actually pointless for dual-stack networks. Dual-stack means you have IPv4 and IPv6 set up, which is the most common way to deploy IPv6 today.
+In this setup, the router would translate any ULA address like fce2:10:88:0::/64 into the GUA prefix 2001:dead:beef:1::/64 as traffic exits the LAN.
 
-When it comes to choosing what source address to use for a connection, applications use something called the “happy eyeballs” algorithm. If a host has both an IPv4 and an IPv6 A/AAAA DNS record then you race connecting to both and see which one comes back faster.
+When it comes to choosing what source address to use for a connection, applications use something called the “happy eyeballs” algorithm. If a host has both an IPv4 (A) and IPv6 (AAAA) DNS record, the application races connecting to both and uses whichever responds first.
 
-[This article](https://blog.ipspace.net/2022/05/ipv6-ula-made-useless/) linked from [this forum post](https://forum.opnsense.org/index.php?topic=33902.0) indicate that IPv6 ULAs have a lower priority than IPv4 when it comes to picking an address in the happy eyeballs algorithm.
+[This article](https://blog.ipspace.net/2022/05/ipv6-ula-made-useless/) linked from [this forum post](https://forum.opnsense.org/index.php?topic=33902.0) indicates that IPv6 ULAs have a lower priority than IPv4 when it comes to picking an address in the happy eyeballs algorithm.
 
 In this case if your network devices don’t know about the GUAs, and instead solely see a Private IPv4 and an IPv6 ULA on their interface, they will always pick the Private IPv4 when accessing the internet.
 
-For example, if the Resolver from before had fce2:10:88:0:3033:34FF:FE35:3637 and 10.88.0.2 assigned to its network port, it won’t ever use the fce2 address.
+For example, if the Resolver from before had fce2:10:88:0:3033:34ff:fe35:3637 and 10.88.0.2 assigned to its network port, it won’t ever use the fce2 address.
 
-Contrast this to example before where the Resolver would have 2001:dead:beef:1:3033:34ff:fe35:3637, fce2:10:88:0:3033:34FF:FE35:3637, and 10.88.02. In this example it will race between the 2001: and 10.88 addresses.
+Contrast this to the example before where the Resolver would have 2001:dead:beef:1:3033:34ff:fe35:3637, fce2:10:88:0:3033:34ff:fe35:3637, and 10.88.0.2. In this example it will race between the 2001: and 10.88 addresses.
 
 # IPv6 NAT GUA to GUA
 
@@ -148,27 +149,35 @@ In the US a lease from ARIN is at minimum $275 [a year](https://www.arin.net/res
 
 My Google Fiber residential 1G plan is $70 a month. A business 1G plan is $100. I don’t know if the 1G plan comes with static IPs or not. The business 2G plan is $250 a month. An ARIN allocation is more expensive than all of those! But getting a Business Plan likely requires registering a business at your home address, which I would have to research how to do.
 
-The solution to this cost is to have more friends. Friends in particular that have ARIN allocations and are willing to give you a portion theirs lol.
+The solution to this cost is to have more friends. In particular friends that have ARIN allocations and are willing to give you a portion of theirs lol.
+
+Getting your own lease, while expensive, opens your other options for learning about networking. You get your own ASN!
+
+The hip thing to do with your own ASN is to run a routing daemon (e.g bird or frr, bird is better though) in a VPS and BGP peer with your provider. I’ve seen this done with Vultr. Their docs look thorough and helpful.
+
+After setting up BGP, you can make tunnels between your VPSes in different regions, and/or back to your homelab, to run OSPF or other IGP protocols.
+
+I’m considering doing this VPC peering to learn more about BGP, which I have to deal with at my job.
 
 # DHCPv6 Tricks
 
-For Opnsense, which is my home router for now, I’ve seen [tips](https://www.reddit.com/r/googlefiber/comments/1k4h3q1/comment/moasgs5/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) that you can get a stable prefix by doing
+For OPNsense, which is my home router for now, I’ve seen [tips](https://www.reddit.com/r/googlefiber/comments/1k4h3q1/comment/moasgs5/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) that you can get a stable prefix by doing
 
 Interfaces->Settings->IPv6 DHCP, check Prevent Release
 
-This setting makes Opnsense not send a DHCPv6 release message when it gets restarted.
+This setting makes OPNsense not send a DHCPv6 release message when it gets restarted.
 
 They state that your MAC address and DHCP Unique Identifier (DUID) should also not change if you want to keep the same Prefix.
 
-Opnsense should keep the same DUID from boot to boot.
+OPNsense should keep the same DUID from boot to boot.
 
-If you move to a new device you can always change its MAC address if supported. Otherwise if you virtualize Opnsense (run in a VM) then your MAC address will stay the same when moving a VM from one hypervisor to another, that is unless you change the MAC yourself manually. If I’m wrong about this or anything else in the blog post please let me know by opening a Github discussion on this article.
+If you move to a new device, you can always change its MAC address if the device supports it. Otherwise if you virtualize OPNsense (run in a VM) then your MAC address will stay the same when moving a VM from one hypervisor to another, that is unless you change the MAC yourself manually. If I’m wrong about this or anything else in the blog post please let me know by opening a Github discussion on this article.
 
-I’ve enabled “Prevent Release” and did “Insert existing DUID” in the settings in Opnsense. I will have to see how stable my prefix is over time. My plan is to track that continuously with Prometheus and graph it with Grafana. 
+I’ve enabled “Prevent Release” and did “Insert existing DUID” in the settings in OPNsense. I will have to see how stable my prefix is over time. My plan is to track that continuously with Prometheus and graph it with Grafana.
 
 I’m currently using the “Use IPv6 ULAs alongside GUAs” approach from above.
 
-If my prefix stays stable after these tricks then I will remove the ULAs from the setup.
+If my prefix stays stable after these tricks, then I will remove the ULAs from the setup.
 
 But even needing to worry about this at all is a huge shortcoming of IPv6 at home.
 
