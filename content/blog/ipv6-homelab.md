@@ -141,7 +141,7 @@ Now all that Resolver would see is
 
 2001:db8:1234:1:3033:34ff:fe35:3637 and 10.88.0.2
 
-And be none the wiser to the NAT that is going on. And because we are renting that prefix from ARIN, it will never change, unless we stop paying them!
+and be none the wiser to the NAT that is going on. And because we are renting that prefix from ARIN, it will never change, unless we stop paying them!
 
 This scenario is doable, but it can be expensive depending on the route you choose.
 
