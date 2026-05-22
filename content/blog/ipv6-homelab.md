@@ -143,7 +143,7 @@ Now all that Resolver would see is
 
 And be none the wiser to the NAT that is going on. And because we are renting that prefix from ARIN, it will never change, unless we stop paying them!
 
-This scenario is doable but is expensive.
+This scenario is doable but can be expensive depending on the route you choose.
 
 In the US a lease from ARIN is at minimum \$275 [a year](https://www.arin.net/resources/fees/fee_schedule/). That's \$23 a month.
 
