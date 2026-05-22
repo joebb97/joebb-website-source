@@ -145,13 +145,13 @@ And be none the wiser to the NAT that is going on. And because we are renting th
 
 This scenario is doable but is expensive.
 
-In the US a lease from ARIN is at minimum $275 [a year](https://www.arin.net/resources/fees/fee_schedule/).
+In the US a lease from ARIN is at minimum \$275 [a year](https://www.arin.net/resources/fees/fee_schedule/). That's \$23 a month.
 
-My Google Fiber residential 1G plan is $70 a month. A business 1G plan is $100. I don’t know if the 1G plan comes with static IPs or not. The business 2G plan is $250 a month. An ARIN allocation is more expensive than all of those! But getting a Business Plan likely requires registering a business at your home address, which I would have to research how to do.
+My Google Fiber residential 1G plan is \$70 a month. A business 1G plan is \$100. I don’t know if the 1G plan comes with static IPs or not. The business 2G plan is \$250 a month. But getting a Business Plan likely requires registering a business at your home address, which I would have to research how to do.
 
-The solution to this cost is to have more friends. In particular friends that have ARIN allocations and are willing to give you a portion of theirs lol.
+Compared to the business 1G plan, which is an extra \$30 a month, an ARIN allocation isn't that bad price-wise.
 
-Getting your own lease, while expensive, opens your other options for learning about networking. You get your own ASN!
+Getting your own lease also opens up other options for learning about networking. You get your own ASN!
 
 The hip thing to do with your own ASN is to run a routing daemon (e.g bird or frr, bird is better though) in a VPS and BGP peer with your provider. I’ve seen this done with Vultr. Their docs look thorough and helpful.
 
