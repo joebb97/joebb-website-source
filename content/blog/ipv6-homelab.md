@@ -129,7 +129,7 @@ Contrast this to the example before where the Resolver would have 2001:dead:beef
 
 A hack mentioned in [the forum post](https://forum.opnsense.org/index.php?topic=33902.0) from before is to rent an IPv6 allocation from ARIN and then use a portion of it on your LAN instead of the ULAs. You cannot buy IP space. IP space is solely rentable.
 
-Let’s say we rented a /56 from ARIN, in reality you get much larger allocation but for this example that’s irrelevant. The /56 they gave us was 2001:db8:1234::/56 .
+Let’s say we rented a /56 from ARIN. In reality you get much larger allocation, but for this example that’s irrelevant. The /56 they gave us was 2001:db8:1234::/56.
 
 In this scenario we would ensure that this prefix is not advertised over a BGP session to another router anywhere on the internet.
 
