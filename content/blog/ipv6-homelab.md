@@ -64,7 +64,7 @@ Let’s go back to that Ad-blocking DNS Resolver example.
 
 Let’s say we got 2001:dead:beef::/56 in our Prefix Delegation from the ISP. We could then pick 2001:dead:beef:1::/64 as our LAN prefix. (Other VLANs could be 2001:dead:beef:2::/64, 2001:dead:beef:3::/64, and so on).
 
-Let’s say our device that will run the Resolver has MAC address 32:33:34:35:36:37. Using the EUI64 algorithm that is a part of SLAAC, it will then assign its own address based on the /64 for the LAN and the MAC. In this instance it will pick 2001:dead:beef:1:3033:34ff:fe35:3637 as its address using the [EUI64 algorithm](https://eui64-calculator.nickfedor.com/) that is a part of SLAAC.
+Let’s say our device that will run the Resolver has MAC address 32:33:34:35:36:37. Using the EUI-64 algorithm that is a part of SLAAC, it will then assign its own address based on the /64 for the LAN and the MAC. In this instance it will pick 2001:dead:beef:1:3033:34ff:fe35:3637 as its address using the [EUI-64 algorithm](https://eui64-calculator.nickfedor.com/) that is a part of SLAAC.
 
 SLAAC has an extension, called RDNSS, that lets a Router advertise multiple DNS resolvers to devices on the network when sending Router Advertisements, just like how DHCP does.
 
