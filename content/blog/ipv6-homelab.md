@@ -9,7 +9,7 @@ author: Joey Buiteweg
 
 # The Problems
 
-IPv6 is wonderful in design. It remediates many blemishes of IPv4. Unfortunately it is avoided in many networks, for both justified and unjustified reasons.
+IPv6 is wonderful in design. It remediates many blemishes of IPv4. Unfortunately, it is avoided in many networks, for both justified and unjustified reasons.
 
 Rather than chastise the world over the unjustified reasons, I’m going to focus on what I think are the main reasons people gravitate away from it, especially in the home lab. This post is about usage in home networks, meaning not in the enterprise.
 
